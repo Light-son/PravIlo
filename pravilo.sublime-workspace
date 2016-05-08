@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"cp",
+				"cur-p	cursor: pointer;"
+			],
+			[
 				"no",
 				"no-repeat"
 			],
@@ -510,10 +514,6 @@
 			[
 				"url",
 				"urlencode"
-			],
-			[
-				"$down",
-				"$downloads"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6719,
+				"buffer_size": 6948,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 4736,
+				"buffer_size": 6011,
 				"line_ending": "Windows"
 			}
 		}
@@ -732,10 +732,14 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo"
+		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo",
+		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js"
 	],
 	"file_history":
 	[
+		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js/test-script.js",
+		"/C/Users/User/Desktop/fancybox-example/js/fancybox.js",
+		"/C/Users/User/Desktop/fancybox-example/js/jquery.js",
 		"/C/Users/User/Desktop/Pravilo/index.html",
 		"/C/Users/User/Desktop/Pravilo/css/style.css",
 		"/C/Users/User/Desktop/Pravilo/css/fancybox.css",
@@ -860,10 +864,7 @@
 		"/G/server/domains/kolkor/html/kolkor/pages/user/include/content.php",
 		"/G/server/domains/kolkor/html/kolkor/pages/user/include/customers.php",
 		"/G/server/domains/kolkor/html/kolkor/pages/user/include/language.php",
-		"/G/server/domains/kolkor/html/kolkor/pages/user/include/personal.php",
-		"/G/server/domains/kolkor/html/kolkor/pages/user/operator.php",
-		"/G/server/domains/kolkor/html/kolkor/include/sections.php",
-		"/G/server/domains/kolkor/html/kolkor/include/footer.php"
+		"/G/server/domains/kolkor/html/kolkor/pages/user/include/personal.php"
 	],
 	"find":
 	{
@@ -915,6 +916,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<!-- ",
+			"li",
+			"•        ",
 			"h1",
 			"no-repeat",
 			"<small>",
@@ -1039,10 +1043,7 @@
 			"<\\?php echo (.*); \\?>\\G",
 			"<\\?php echo (.*); \\?>",
 			"<\\?php echo(.*); \\?>",
-			"<?php echo",
-			"reg",
-			"en",
-			"="
+			"<?php echo"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1050,6 +1051,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"li",
 			"/img/",
 			"self::$1\\(",
 			"self::$",
@@ -1176,8 +1178,7 @@
 			"",
 			"\\n",
 			"",
-			"###",
-			""
+			"###"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1197,15 +1198,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6719,
+						"buffer_size": 6948,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								253,
-								253
+								5390,
+								5398
 							]
 						],
 						"settings":
@@ -1222,7 +1223,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2961.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1240,15 +1241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4736,
+						"buffer_size": 6011,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3552,
-								3534
+								5056,
+								5056
 							]
 						],
 						"settings":
@@ -1263,7 +1264,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3663.0,
+						"translation.y": 5182.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1334,7 +1335,7 @@
 	"project": "pravilo.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 64.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -1484,7 +1485,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1492,7 +1493,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 96.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

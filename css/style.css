@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Izhitsa';
+	font-family: 'Georgia';/* 'Izhitsa'; */
 	background-image: url('../img/bg.png');
 	background-attachment: fixed;
 }
@@ -37,7 +37,7 @@ header.container,
 main.container {        /* при boots закоментить */
 	width: 1170px;
 	height: auto;
-	margin: 0 auto !important;
+	margin: 0 auto!important;
 	padding: 0;
 	position: relative;
 	clear: both;
@@ -53,7 +53,7 @@ header {
 	outline: 1px dashed black; */
 }
 header .container {
-	outline: 1px solid gray;
+	/* outline: 1px solid gray; */
 }
 header .top {
 	display: block;
@@ -68,18 +68,16 @@ header .top .item {
 	width: 380px;
 	height: 180px;
 	padding-top: 30px;
-	outline: 1px dotted gray;
 }
 header .top .heading {
-	/* width: 234px; */
+	/*  */
 }
 header .top  .heading h1 {
 	margin: -8px 0;
 	padding: 0;
 	text-align: center;
-	font-size: 55px;/*
-	font-weight: bold; */
-	/* font-family: 'IzhitsaC', sans-serif !important; */
+	font-size: 55px;
+	font-family: 'Izhitsa'/*,  sans-serif */ !important;
 	color: #fff4cf;/*#8f0209, #f2d602, */
 }
 header .top  .heading h1 span {
@@ -97,7 +95,7 @@ header .top .contacts {
 header .top .contacts .tel {
 	display: block;
 	float: left;
-	margin-top: -15px;
+	margin-top: -20px;
 	padding: 0;
 	height: 105px;
 	color: #fff4cf;
@@ -184,7 +182,7 @@ nav {
 nav .container {
 	border-radius: 25px;
 	background-color: #8f0209;
-	outline: 1px solid gray;
+	/* outline: 1px solid gray; */
 }
 nav ul {
 	height: 135px;
@@ -224,52 +222,121 @@ nav ul li:nth-child(2) a {
 
 
 main {
-	width: 100%;
-	height: 500px;
+/* 	width: 100%;
+	height: 500px; */
 }
 main .container {
+	width: 1170px;
+	height: 560px;
 	margin-top: 20px;
     margin-bottom: 20px;
-	height: 570px;
+    padding: 0;
 	border: 1px solid gray;
 	background-color: #FFF3A2;
 	border-radius: 25px;
 }
 main .scroll-element {
 	display: none;
+    text-align: center;
 }
-main .scroll-element.visible{
-	display: block;
+main .scroll-element.visible {
+    display: block;
+    margin: 0;
+    padding: 30px;
 }
 main .item {
 	display: block;
 	float: left;
-    height: 370px;
-	padding: 20px;
+    height: 500px;
 	outline: 1px solid red;
 	border-radius: 25px;
 	font-size: 20px;
 	color: #8f0209;
-	text-indent: 20px;
 }
 main .item.left {
-	width: 535px;
-	margin: 0 15px 0 0!important;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	padding-top: 10px;
+	/* margin: 15px 15px 15px 0; */
+	/* margin: 0 15px 0 0!important; */
+}
+main .item.left img {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
 }
 main .item.right {
-	width: 585px;/*
-	margin: 0 0 0 15px!important; */
-/* 	background: transparent url('../img/svyatoch.png') 50% 50% no-repeat; */
+    width: 578px;
+    padding: 20px;
+    margin: 0 0 0 30px;
+    background: transparent url('../img/svyatoch.png') 50% 50% no-repeat;
+    overflow-y: hidden;
+    text-align: left;
 }
 main .item.right img {
 	opacity: 0.2;
 }
 main .item.right h3 {
-	/*  */
+    margin: 0;
+    padding: 0;
 }
 main .item.right p {
 	font-family: serif;
+	text-indent: 20px;
 }
+main .item.right .colored {
+    display: block;
+    /* float: left; */
+    width: 578px;
+    height: 230px;
+    background-color: #f2d602;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 120px;
+    padding: 20px 30px;
+}
+main .scroll-element .btn{
+	display: block;
+	float: left;
+	position: absolute;
+	border-radius: 35px;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+main .scroll-element .buy.btn {
+	bottom: 66px;
+	right: 270px;
+	width: 370px;
+	height: 75px;
+	padding: 12px;
+	border: 4px solid #8f0209;
+	background-color: #f2d602;
+	color: #8f0209;
+}
+main .scroll-element .btn:hover {
+	background-color: #8f0209;
+	color: #f2d602;
+}
+main .scroll-element .training.btn {
+	bottom: 20px;
+	right: 20px;
+	width: 410px;
+	height: 45px;
+	padding: 0;
+	background-color: #8f0209;
+	color: #f2d602;
+}
+/* main .scroll-element .training.btn:hover {
+	background-color: #f2d602;
+	color: #8f0209;
+} */
+
+
+
 main .popup {
 	display: none;
 }
