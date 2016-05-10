@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"con",
+				"contain"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
 				"cp",
 				"cur-p	cursor: pointer;"
 			],
@@ -110,10 +122,6 @@
 			[
 				"pad",
 				"padding-left"
-			],
-			[
-				"con",
-				"content-box"
 			],
 			[
 				"co",
@@ -506,14 +514,6 @@
 			[
 				"mh_",
 				"mh_read_categories_href.php"
-			],
-			[
-				"$pag",
-				"$pages_content"
-			],
-			[
-				"url",
-				"urlencode"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6948,
+				"buffer_size": 7415,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 6011,
+				"buffer_size": 7194,
 				"line_ending": "Windows"
 			}
 		}
@@ -916,6 +916,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1.png",
+			"<img",
+			"\nmain .scroll-element .column {\n	/*  */\n}",
+			"-gallery",
+			"row",
+			"slider",
+			"after",
 			"<!-- ",
 			"li",
 			"•        ",
@@ -1036,14 +1043,7 @@
 			"<?php",
 			"<\\?php echo (.*); \\?>",
 			"<\\?php echo (.*) \\?>",
-			"php echo",
-			"<\\?php echo (.*); \\?>",
-			"<?php echo (.*); ?>",
-			"<\\?php echo (.*); \\?>",
-			"<\\?php echo (.*); \\?>\\G",
-			"<\\?php echo (.*); \\?>",
-			"<\\?php echo(.*); \\?>",
-			"<?php echo"
+			"php echo"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1198,15 +1198,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6948,
+						"buffer_size": 7415,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5390,
-								5398
+								6348,
+								6128
 							]
 						],
 						"settings":
@@ -1223,10 +1223,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2980.0,
+						"translation.y": 3477.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1241,15 +1241,19 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6011,
+						"buffer_size": 7194,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5056,
-								5056
+								4954,
+								4954
+							],
+							[
+								4973,
+								4973
 							]
 						],
 						"settings":
@@ -1264,10 +1268,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5182.0,
+						"translation.y": 4856.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

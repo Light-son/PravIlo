@@ -27,8 +27,10 @@ a, a:hover, a:active, a:focus, a:visited {
 }
 
 header, main, footer, section {
-	width: 100%;
+	width: 100vw;
 	height: auto;
+	margin: 0;
+	padding: 0;
 	position: relative;
 	clear: both;
 }
@@ -38,8 +40,19 @@ main.container {        /* при boots закоментить */
 	width: 1170px;
 	height: auto;
 	margin: 0 auto!important;
-	padding: 0;
+	/* padding: 0; */
 	position: relative;
+	clear: both;
+}
+
+header .container::after,
+footer .container::after,
+section .container::after,
+header .container::before,
+footer .container::before,
+section .container::before {
+	content: "";
+	display: block;
 	clear: both;
 }
 
@@ -72,13 +85,13 @@ header .top .item {
 header .top .heading {
 	/*  */
 }
-header .top  .heading h1 {
+header .top .heading h1 {
 	margin: -8px 0;
-	padding: 0;
-	text-align: center;
-	font-size: 55px;
-	font-family: 'Izhitsa'/*,  sans-serif */ !important;
-	color: #fff4cf;/*#8f0209, #f2d602, */
+	padding: 0 25px;
+	text-align: left;
+	font-size: 65px;
+	font-family: 'Izhitsa'/*, sans-serif */ !important;
+	color: #fff4cf;
 }
 header .top  .heading h1 span {
 	color: #f2d602;
@@ -103,11 +116,11 @@ header .top .contacts .tel {
 }
 header .top .contacts .tel a {
 	display: block;
-	float: left;
+	float: right;
 	/* width: 145px; */
 	height: 45px;
 	margin: 0 0 0 0;
-    padding: 0 25px;
+	/* padding: 0 025px; */
 	font-size: 40px;
 	font-weight: bold;
 	color: #fff4cf;
@@ -120,14 +133,14 @@ header .top .contacts .tel a:active */ {
 }
 header .top .contacts input[data-popup="callback"] {
 	display: block;
-	float: left;
+	float: right;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 355px;
 	height: 48px;
 	border: none;
 	border-radius: 25px;
-    font-family: Georgia;
+	font-family: Georgia;
 	font-size: 32px;
 	font-weight: bold;
 	background-color: #8f0209;
@@ -229,25 +242,61 @@ main .container {
 	width: 1170px;
 	height: 560px;
 	margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0;
+	margin-bottom: 20px;
+	padding: 0;
 	border: 1px solid gray;
 	background-color: #FFF3A2;
 	border-radius: 25px;
 }
 main .scroll-element {
 	display: none;
-    text-align: center;
+	text-align: center;
 }
 main .scroll-element.visible {
-    display: block;
-    margin: 0;
-    padding: 30px;
+	display: block;
+	margin: 0;
+	padding: 30px;
+}
+main .scroll-element .gallery {
+	display: block;
+	float: left;
+	width: 1080px;
+	height: 500px;
+	text-align: center;
+}
+main .scroll-element .gallery .column {
+	display: block;
+	float: left;
+    width: 585px;
+	height: 500px;
+}
+main .scroll-element .gallery .column.side {
+	width: 235px;
+}
+main .scroll-element .gallery .column.side .wrap {
+	display: block;
+	float: left;
+	width: 235px;
+	height: 235px;
+	margin: 0 0 10px 0;
+}
+main .scroll-element .gallery .column.side .wrap img {
+	width: auto;
+	height: auto;
+	max-width: 235px;
+	max-height: 235px;
+}
+main .scroll-element .scroll-vertical {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 500px;
+	border: 1px solid green;
 }
 main .item {
 	display: block;
 	float: left;
-    height: 500px;
+	height: 500px;
 	outline: 1px solid red;
 	border-radius: 25px;
 	font-size: 20px;
@@ -262,41 +311,54 @@ main .item.left {
 	/* margin: 0 15px 0 0!important; */
 }
 main .item.left img {
-    width: auto;
-    height: auto;
-    max-width: 500px;
-    max-height: 500px;
+	width: auto;
+	height: auto;
+	max-width: 500px;
+	max-height: 500px;
 }
 main .item.right {
-    width: 578px;
-    padding: 20px;
-    margin: 0 0 0 30px;
-    background: transparent url('../img/svyatoch.png') 50% 50% no-repeat;
-    overflow-y: hidden;
-    text-align: left;
+	width: 578px;
+	padding: 20px;
+	margin: 0 0 0 30px;
+	overflow-y: hidden;
+	text-align: left;
+}
+main .item .bg {
+	width: 538px;
+	height: 470px;
+	position: absolute;
+	background: transparent url('../img/svyatoch.png') 0 0 no-repeat;
+	background-size: contain;
+	background-position: 50px 0;
+	opacity: .3;
 }
 main .item.right img {
 	opacity: 0.2;
 }
 main .item.right h3 {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 main .item.right p {
 	font-family: serif;
 	text-indent: 20px;
 }
+main .item.right .uncolored {
+	height: 250px;
+	text-indent: 30px;
+	/* outline: 1px solid gray; */
+}
 main .item.right .colored {
-    display: block;
-    /* float: left; */
-    width: 578px;
-    height: 230px;
-    background-color: #f2d602;
-    border-radius: 30px;
-    position: absolute;
-    bottom: 30px;
-    right: 120px;
-    padding: 20px 30px;
+	display: block;
+	float: left;
+	width: 540px;
+	height: 230px;
+	background-color: #f2d602;
+	border-radius: 30px;
+	/* position: absolute; */
+	/* bottom: 30px; */
+	/* right: 120px; */
+	padding: 20px 30px;
 }
 main .scroll-element .btn{
 	display: block;
@@ -322,13 +384,16 @@ main .scroll-element .btn:hover {
 	color: #f2d602;
 }
 main .scroll-element .training.btn {
-	bottom: 20px;
-	right: 20px;
-	width: 410px;
-	height: 45px;
-	padding: 0;
-	background-color: #8f0209;
-	color: #f2d602;
+    display: block;
+    float: right;
+    /* bottom: 20px; */
+    /* right: 20px; */
+    width: 410px;
+    height: 45px;
+    margin: 0 0 0 85px!important;
+    padding: 0;
+    background-color: #8f0209;
+    color: rgba(242, 214, 2, 1);
 }
 /* main .scroll-element .training.btn:hover {
 	background-color: #f2d602;
