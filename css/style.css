@@ -296,8 +296,8 @@ main .scroll-element .scroll-vertical {
 main .item {
 	display: block;
 	float: left;
-	height: 500px;
-	outline: 1px solid red;
+	height: 500px;/*
+	outline: 1px solid red; */
 	border-radius: 25px;
 	font-size: 20px;
 	color: #8f0209;
@@ -309,6 +309,27 @@ main .item.left {
 	padding-top: 10px;
 	/* margin: 15px 15px 15px 0; */
 	/* margin: 0 15px 0 0!important; */
+}
+main .item.left.colored {
+	background-color: #f2d602;
+	font-size: 30px;
+}
+main .item.left .tel {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 500px;
+}
+main .item.left .tel a {
+    display: block;
+    /* float: right; */
+    /* width: 145px; */
+    height: 45px;
+    margin: 0 0 0 0;
+    /* padding: 0 025px; */
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    color: #8f0209;
 }
 main .item.left img {
 	width: auto;
@@ -322,6 +343,8 @@ main .item.right {
 	margin: 0 0 0 30px;
 	overflow-y: hidden;
 	text-align: left;
+	border-radius: 25px;
+	outline: 1px solid red;
 }
 main .item .bg {
 	width: 538px;

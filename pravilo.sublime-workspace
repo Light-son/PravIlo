@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7415,
+				"buffer_size": 7762,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 7194,
+				"buffer_size": 7645,
 				"line_ending": "Windows"
 			}
 		}
@@ -1198,15 +1198,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7415,
+						"buffer_size": 7762,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6348,
-								6128
+								6948,
+								6948
 							]
 						],
 						"settings":
@@ -1223,7 +1223,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3477.0,
+						"translation.y": 4009.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1241,19 +1241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7194,
+						"buffer_size": 7645,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4954,
-								4954
-							],
-							[
-								4973,
-								4973
+								6052,
+								6052
 							]
 						],
 						"settings":
@@ -1268,7 +1264,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4856.0,
+						"translation.y": 6224.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
