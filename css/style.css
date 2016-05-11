@@ -34,16 +34,16 @@ header, main, footer, section {
 	position: relative;
 	clear: both;
 }
-section .container,
-header.container,
-main.container {        /* при boots закоментить */
+/* section .container,
+header .container,
+nav .container,
+main .container {
 	width: 1170px;
 	height: auto;
 	margin: 0 auto!important;
-	/* padding: 0; */
 	position: relative;
 	clear: both;
-}
+} */
 
 header .container::after,
 footer .container::after,
@@ -62,8 +62,8 @@ main.container {        /* при boots закоментить */
 
 header {
 	/* height: 315px; */
-	height: 180px;/*
-	outline: 1px dashed black; */
+	/* height: 180px; */
+	/* outline: 1px dashed black;  */
 }
 header .container {
 	/* outline: 1px solid gray; */
@@ -72,13 +72,13 @@ header .top {
 	display: block;
 	float: left;
 	width: 100%;    /* boots принимает? */
-	height: 180px;
+	/* height: 180px; */
 	/* margin: 0 auto; */
 }
 header .top .item {
 	display: block;
 	float: left;
-	width: 380px;
+	/* width: 380px; */
 	height: 180px;
 	padding-top: 30px;
 }
@@ -187,28 +187,31 @@ header .callbackform input[type="text"] {
 header .callbackform input[type="submit"] {
 	/*  */
 }
-
-nav {
-	width: 100%;    /* boots принимает*/
+#menu {
 	height: 135px;
+	padding-bottom: 30px;
 }
-nav .container {
+#menu .container {
 	border-radius: 25px;
 	background-color: #8f0209;
 	/* outline: 1px solid gray; */
 }
-nav ul {
+#menu nav {
+	height: 135px;
+	font-family: 'Izhitsa'/*, sans-serif */ !important;
+}
+#menu nav ul {
 	height: 135px;
 	padding: 0;
 	margin: 0 auto;
 }
-nav ul li {
+#menu nav ul li {
 	height: 135px;
 	float: left;
 	list-style: none;
 	width: 228px;
 }
-nav ul li a {
+#menu nav ul li a {
 	display: block;
 	float: left;
 	width: 100%;
@@ -223,13 +226,13 @@ nav ul li a {
 	transition-delay: 100ms;
 	transition-property: color, background-color; */
 }
-nav ul li:hover a {
+#menu nav ul li:hover a {
 /* 	background-color: rgba(0, 0, 0, 0.2);
 	color: orange; */
 	background-color: #f2d602;
 	color: #8f0209;
 }
-nav ul li:nth-child(2) a {
+#menu nav ul li:nth-child(2) a {
 	padding: 25px 15px;
 }
 
@@ -341,10 +344,10 @@ main .item.right {
 	width: 578px;
 	padding: 20px;
 	margin: 0 0 0 30px;
-	overflow-y: hidden;
+	overflow-y: auto;
 	text-align: left;
 	border-radius: 25px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 main .item .bg {
 	width: 538px;
@@ -353,7 +356,7 @@ main .item .bg {
 	background: transparent url('../img/svyatoch.png') 0 0 no-repeat;
 	background-size: contain;
 	background-position: 50px 0;
-	opacity: .3;
+	opacity: 0.2;
 }
 main .item.right img {
 	opacity: 0.2;
@@ -361,13 +364,14 @@ main .item.right img {
 main .item.right h3 {
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 main .item.right p {
 	font-family: serif;
 	text-indent: 20px;
 }
 main .item.right .uncolored {
-	height: 250px;
+	height: 230px;
 	text-indent: 30px;
 	/* outline: 1px solid gray; */
 }

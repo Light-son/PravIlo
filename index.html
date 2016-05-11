@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>ПравИло</title>
 	<link href="/img/favicon.ico" type="image/gif" rel="shortcut icon">
-	<link href="http://allfont.ru/allfont.css?fonts=izhitsa" rel="stylesheet" type="text/css" />
+	<!-- <link href="http://allfont.ru/allfont.css?fonts=izhitsa" rel="stylesheet" type="text/css" /> -->
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -18,13 +18,16 @@
 		<header>
 			<div class="container">
 				<div class="top">
-					<a  href="javascript:void(0);" class="item heading"><!-- Заголовок сайта -->
+
+					<a class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item heading" href="javascript:void(0);"><!-- Заголовок сайта -->
 						<h1>Кристал <span>ПравИло</span></h1>
 					</a>
-					<div class="item logo"><!-- Лого -->
+
+					<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 item logo"><!-- Лого -->
 						<img src="img/logo-lada.png" alt="ПравИло">
 					</div>
-					<div class="item contacts"><!-- Контактные данные -->
+
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item contacts"><!-- Контактные данные -->
 						<div class="tel">
 							<a href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
 							<a href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
@@ -43,28 +46,33 @@
 							</form>
 						<!-- </div> -->
 					</div><!-- end: item h-contacts -->
+
 					<div class="clr"></div>
 				</div><!-- end: header>.top -->
 				<div class="clr"></div>
 			</div><!-- end: .container -->
 		</header>
 
-		<nav><!-- class="top-menu"> -->
+		<section id="menu">
 			<div class="container">
-				<ul>
-					<li class="parent active"><a href="javascript:void(0);" class="about">ПравИло</a></li>
-					<li class="parent"><a href="javascript:void(0);" class="bye">Купить ПравИло</a></li>
-					<li class="parent"><a href="javascript:void(0);" class="trainee">Тренировки</a></li>
-					<li class="parent"><a href="javascript:void(0);" class="gallery">Галерея</a></li>
-					<li class="parent"><a  class="parent"href="javascript:void(0);" class="contacts">Контакты</a></li>
-					<div class="clr"></div>
-				</ul>
+				<nav><!-- class="top-menu"> -->
+					<ul>
+						<li class="parent active" data-index="0"><a href="javascript:void(0);">ПравИло</a></li>
+						<li class="parent" data-index="1"><a href="javascript:void(0);">Купить ПравИло</a></li>
+						<li class="parent" data-index="2"><a href="javascript:void(0);">Тренировки</a></li>
+						<li class="parent" data-index="3"><a href="javascript:void(0);">Галерея</a></li>
+						<li class="parent" data-index="4"><a  class="parent"href="javascript:void(0);">Контакты</a></li>
+						<!-- <li class="parent" data-index="5"><a  class="parent"href="javascript:void(0);">Отзывы</a></li> -->
+						<div class="clr"></div>
+					</ul>
+				</nav>
 			</div>
-		</nav>
+		</section>
+
 
 		<main><!-- Секция контента -->
 			<div class="container">
-				<div class="scroll-element"><!--CM-->
+				<div class="scroll-element visible" data-index="0"><!--CM-->
 					<div class="item left">
 					<a class="fancybox" href="img/screenshot_5.jpg" rel="some-group">
 							<img src="img/screenshot_5.jpg" alt="ПравИло">
@@ -73,29 +81,33 @@
 					</div>
 					<div class="item right">
 						<div class="bg"></div>
-						<h3>Описание</h3>
-						<p>  «ПравИло» - тренажер, который симметрично вытягивает тело - мышцы, суставы, связки, сухожилия, вынуждая мышцы прекратить напряженность и растянуться на максимальную длину, а все сухожилия приводя в максимально активное состояние.</p>
-						<ul>Тренировки на «ПравИло» это:
-							<li>Восстановление осанки;</li>
-							<li>Укрепление суставов и связок;</li>
-							<li>Укрепление сухожилий и мышц;</li>
-							<li>Высвобождение зажатых нервных окончаний;</li>
-							<li>Проработка всех блоков и зажимов в теле;</li>
-							<li>Улучшение кровообращения;</li>
-							<li>Развитие силы воли;</li>
-							<li>Повышение уверенности в себе;</li>
-							<li>Повышение внимания и уровня сознания;</li>
-							<li>Синхронизация полушарий головного мозга;</li>
-							<li>Повышение уровня физической силы и энергетики.</li>
-						</ul>
-						<p>После тренировки каждый чувствует: легкость тела, бодрость, прилив жизненных сил и энергии.
-						 	Если регулярно подвергать тело растяжкам на «ПравИло» - легко повысить двигательный тонус, улучшить подвижность суставов, восстановить нормальную работу всего опорно-двигательного аппарата, особенно после травм, заболеваний, нервных напряжений и стрессов.
-						</p>
+							<div class="page page-two">
+								<h3>Описание</h3>
+								<p>  «ПравИло» - тренажер, который симметрично вытягивает тело - мышцы, суставы, связки, сухожилия, вынуждая мышцы прекратить напряженность и растянуться на максимальную длину, а все сухожилия приводя в максимально активное состояние.</p>
+								<ul>Тренировки на «ПравИло» это:
+									<li>Восстановление осанки;</li>
+									<li>Укрепление суставов и связок;</li>
+									<li>Укрепление сухожилий и мышц;</li>
+									<li>Высвобождение зажатых нервных окончаний;</li>
+									<li>Проработка всех блоков и зажимов в теле;</li>
+									<li>Улучшение кровообращения;</li>
+									<li>Развитие силы воли;</li>
+									<li>Повышение уверенности в себе;</li>
+									<li>Повышение внимания и уровня сознания;</li>
+								</ul>
+							</div>
+								<ul>
+									<li>Синхронизация полушарий головного мозга;</li>
+									<li>Повышение уровня физической силы и энергетики.</li>
+								</ul>
+								<p>После тренировки каждый чувствует: легкость тела, бодрость, прилив жизненных сил и энергии.
+								 	Если регулярно подвергать тело растяжкам на «ПравИло» - легко повысить двигательный тонус, улучшить подвижность суставов, восстановить нормальную работу всего опорно-двигательного аппарата, особенно после травм, заболеваний, нервных напряжений и стрессов.
+								</p>
 					</div>
 					<div class="clr"></div>
 				</div>
 
-				<div class="scroll-element"><!--CM-->
+				<div class="scroll-element" data-index="1"><!--CM-->
 						<div class="bg"></div>
 					<!-- <div class="wrapper">
 						<div class="go left">
@@ -112,7 +124,7 @@
 					<a href="javascript:void(0);" class="buy btn" data-modal="popup-show">Заказать!</a>
 				</div>
 
-				<div class="scroll-element"><!--CM-->
+				<div class="scroll-element" data-index="2"><!--CM-->
 					<div class="item left">
 						<a class="fancybox" href="img/screenshot_5.jpg" rel="some-group">
 							<img src="img/screenshot_5.jpg" alt="ПравИло">
@@ -136,7 +148,7 @@
 					<div class="clr"></div>
 				</div>
 
-				<div class="scroll-element"><!--CM-->
+				<div class="scroll-element" data-index="3"><!--CM-->
 					<div class="gallery">
 						<div class="column side">
 							<div class="wrap"><!--  --><img src="img/screenshot_5.jpg" alt="ПравИло"></div>
@@ -160,7 +172,7 @@
 					<div class="clr"></div>
 				</div>
 
-				<div class="scroll-element visible"><!--CM-->
+				<div class="scroll-element" data-index="4"><!--CM-->
 					<div class="item left colored">
 					<h2>Наши контакты:</h2>
 					<p>Украина</p>
