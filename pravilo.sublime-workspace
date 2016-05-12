@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8705,
+				"buffer_size": 8758,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 8077,
+				"buffer_size": 8365,
 				"line_ending": "Windows"
 			}
 		}
@@ -869,7 +869,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 54.0
 	},
 	"find_in_files":
 	{
@@ -917,6 +917,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
 			"background-image",
 			"\n						<li class=\"parent\" data-index=\"4\"><a  class=\"parent\"href=\"javascript:void(0);\">Контакты</a></li>",
 			"col-lg-4",
@@ -1043,8 +1044,7 @@
 			"$form",
 			"phone",
 			"$post",
-			"post",
-			"$post"
+			"post"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1199,15 +1199,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8705,
+						"buffer_size": 8758,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3017,
-								7181
+								5365,
+								5365
 							]
 						],
 						"settings":
@@ -1224,10 +1224,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4044.0,
+						"translation.y": 2752.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1242,15 +1242,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8077,
+						"buffer_size": 8365,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7001,
-								7001
+								4887,
+								4887
 							]
 						],
 						"settings":
@@ -1265,10 +1265,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7159.0,
+						"translation.y": 4936.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1302,7 +1302,7 @@
 		"cols":
 		[
 			0.0,
-			0.536603221083,
+			0.613469985358,
 			1.0
 		],
 		"rows":
@@ -1486,7 +1486,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
