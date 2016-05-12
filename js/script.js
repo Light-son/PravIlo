@@ -24,6 +24,7 @@
 				$('.scroll-element').removeClass('visible');
 				var index = me.attr('data-index');
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
+				console.log('INDEX :' + index);
 			}
 
 		});
