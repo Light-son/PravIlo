@@ -8,13 +8,14 @@
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script  src="bootstrap/bootstrap.min.js"></script>
 	<script src="js/fancybox.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/script.js"></script>	
 </head>
 <body>
-
 		<header>
 			<div class="container">
 				<div class="top">
@@ -79,7 +80,7 @@
 						</a>
 
 					</div>
-					<div class="item right">
+					<div class="item right rune">
 						<div class="bg"></div>
 							<div class="page page-two">
 								<h3>Описание</h3>
@@ -182,7 +183,7 @@
 						</div>
 					</div>
 					<div class="item right">
-						
+						<div id="mapid"></div>
 						<!-- <img src="img/screenshot_5.jpg" alt="ПравИло"> -->
 					</div>
 					<div class="clr"></div>
@@ -204,5 +205,7 @@
 				</div>
 			</div><!-- end: container -->
 		</main>
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<script src="js/leaf-map.js"></script>
 </body>
 </html>
