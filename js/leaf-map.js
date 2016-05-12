@@ -10,13 +10,13 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 var myIcon = L.icon({
     iconUrl: '../img/Google-icon.png',
     iconRetinaUrl: '../img/Google-icon.png',
-    iconSize: [38, 95],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76],
-    shadowUrl: 'my-icon-shadow.png',
-    shadowRetinaUrl: 'my-icon-shadow@2x.png',
-    shadowSize: [68, 95],
-    shadowAnchor: [22, 94]
+    iconSize: [44, 44],
+    // iconAnchor: [22, 94],
+    // popupAnchor: [-3, -76],
+    // shadowUrl: 'my-icon-shadow.png',
+    // shadowRetinaUrl: 'my-icon-shadow@2x.png',
+    // shadowSize: [68, 95],
+    // shadowAnchor: [22, 94]
 });
 
 L.marker([48.5125571,34.5946928], {icon: myIcon}).addTo(map);
