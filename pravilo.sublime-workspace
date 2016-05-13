@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8758,
+				"buffer_size": 9065,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 8365,
+				"buffer_size": 9032,
 				"line_ending": "Windows"
 			}
 		}
@@ -869,7 +869,7 @@
 	],
 	"find":
 	{
-		"height": 54.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -917,6 +917,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".contentwrapper",
 			";\n",
 			"background-image",
 			"\n						<li class=\"parent\" data-index=\"4\"><a  class=\"parent\"href=\"javascript:void(0);\">Контакты</a></li>",
@@ -1043,8 +1044,7 @@
 			"add",
 			"$form",
 			"phone",
-			"$post",
-			"post"
+			"$post"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1199,15 +1199,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8758,
+						"buffer_size": 9065,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5365,
-								5365
+								3572,
+								3572
 							]
 						],
 						"settings":
@@ -1224,10 +1224,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2752.0,
+						"translation.y": 1744.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1242,15 +1242,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8365,
+						"buffer_size": 9032,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4887,
-								4887
+								4716,
+								4661
 							]
 						],
 						"settings":
@@ -1265,10 +1265,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4936.0,
+						"translation.y": 4726.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1486,7 +1486,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

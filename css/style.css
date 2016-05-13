@@ -187,44 +187,75 @@ header .callbackform input[type="text"] {
 header .callbackform input[type="submit"] {
 	/*  */
 }
-#menu {
+/* #menu {
 	height: 135px;
 	padding-bottom: 30px;
+} */
+#menu {
+    height: 60px;
+    /* padding-bottom: 15px; */
 }
-#menu .container {
+/* #menu .container {
 	border-radius: 25px;
 	background-color: #8f0209;
-	/* outline: 1px solid gray; */
+} */
+#menu .container {
+    border-radius: 20px;
+    background-color: #8f0209;
 }
-#menu nav {
+/* #menu nav {
 	height: 135px;
-	font-family: 'Izhitsa'/*, sans-serif */ !important;
+	font-family: 'Izhitsa' !important;
+} */
+#menu nav {
+    height: 60px;
+    font-family: 'Izhitsa' !important;
 }
-#menu nav ul {
+/* #menu nav ul {
 	height: 135px;
 	padding: 0;
 	margin: 0 auto;
+} */
+#menu nav ul {
+    height: 60px;
+    padding: 0;
+    margin: 0 auto;
 }
-#menu nav ul li {
+/* #menu nav ul li.parent {
 	height: 135px;
 	float: left;
 	list-style: none;
 	width: 228px;
+} */
+#menu nav ul li.parent {
+    height: 60px;
+    float: left;
+    list-style: none;
+    width: auto;
+    /* padding: 5px 26px; */
 }
-#menu nav ul li a {
+/* #menu nav ul li a {
 	display: block;
 	float: left;
 	width: 100%;
 	height: 135px;
 /*     line-height: ; */
-	padding: 45px 15px;
+	/* padding: 45px 15px;
 	text-align: center;
 	color: #f2d602;
-	/* font-weight: bold; */
-	font-size: 35px;
+	font-size: 35px; */
 /* 	transition-duration: 1000ms;
 	transition-delay: 100ms;
 	transition-property: color, background-color; */
+/*} */
+#menu nav ul li a {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #f2d602;
+    font-size: 35px;
+    padding: 5px 26px;
 }
 #menu nav ul li:hover a {
 /* 	background-color: rgba(0, 0, 0, 0.2);
@@ -232,9 +263,9 @@ header .callbackform input[type="submit"] {
 	background-color: #f2d602;
 	color: #8f0209;
 }
-#menu nav ul li:nth-child(2) a {
+/* #menu nav ul li:nth-child(2) a {
 	padding: 25px 15px;
-}
+} */
 
 
 main {
@@ -382,6 +413,13 @@ main .item .bg {
 	background-position: 50px 0;
 	opacity: 0.2;
 }
+/* main .item .contentwrapper {
+	display: block;
+	float: left;
+	width: 538px;
+	height: 460px;
+	z-index: 3;
+} */
 main .item.right h3 {
 	margin: 0;
 	padding: 0;
