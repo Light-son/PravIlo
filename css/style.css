@@ -397,7 +397,7 @@ main .item.left img {
 }
 main .item.right {
 	width: 578px;
-	padding: 20px;
+	padding: 0 20px;
 	margin: 0 0 0 30px;
 	overflow-y: auto;
 	text-align: left;
@@ -430,7 +430,7 @@ main .item.right p {
 	text-indent: 20px;
 }
 main .item.right .uncolored {
-	height: 230px;
+	height: 270px;
 	text-indent: 30px;
 	/* outline: 1px solid gray; */
 }
@@ -445,6 +445,7 @@ main .item.right .colored {
 	/* bottom: 30px; */
 	/* right: 120px; */
 	padding: 20px 30px;
+	position: relative;
 }
 main .scroll-element .btn{
 	display: block;
