@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"co",
+				"cover"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
 				"bo",
 				"border-radius"
 			],
@@ -22,10 +34,6 @@
 			[
 				"no",
 				"no-repeat"
-			],
-			[
-				"ba",
-				"background"
 			],
 			[
 				"fsi",
@@ -84,10 +92,6 @@
 				"border"
 			],
 			[
-				"c",
-				"class	Attr"
-			],
-			[
 				"lsn",
 				"lis-n	list-style: none;"
 			],
@@ -122,10 +126,6 @@
 			[
 				"pad",
 				"padding-left"
-			],
-			[
-				"co",
-				"content-box"
 			],
 			[
 				"box",
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8105,
+				"buffer_size": 8758,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 7762,
+				"buffer_size": 8365,
 				"line_ending": "Windows"
 			}
 		}
@@ -869,7 +869,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 54.0
 	},
 	"find_in_files":
 	{
@@ -917,6 +917,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
+			"background-image",
 			"\n						<li class=\"parent\" data-index=\"4\"><a  class=\"parent\"href=\"javascript:void(0);\">Контакты</a></li>",
 			"col-lg-4",
 			"col-lg",
@@ -1042,9 +1044,7 @@
 			"$form",
 			"phone",
 			"$post",
-			"post",
-			"$post",
-			"$label"
+			"post"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1199,15 +1199,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8105,
+						"buffer_size": 8758,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6791,
-								6791
+								5365,
+								5365
 							]
 						],
 						"settings":
@@ -1224,7 +1224,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4100.0,
+						"translation.y": 2752.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1242,15 +1242,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7762,
+						"buffer_size": 8365,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6245,
-								6312
+								4887,
+								4887
 							]
 						],
 						"settings":
@@ -1265,7 +1265,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6324.0,
+						"translation.y": 4936.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1302,7 +1302,7 @@
 		"cols":
 		[
 			0.0,
-			0.536603221083,
+			0.613469985358,
 			1.0
 		],
 		"rows":

@@ -260,6 +260,30 @@ main .scroll-element.visible {
 	margin: 0;
 	padding: 30px;
 }
+main .scroll-element[data-index="0"] .item.left,
+main .scroll-element[data-index="2"] .item.left {
+	background-image: url('../img/refs/man_2.jpg');
+	background-position: center;
+	background-size: cover;
+	/* background-attachment: fixed; */
+}
+main .scroll-element > .img-block {
+	display: inline-block;
+	width: 865px;
+	height: 485px;
+	border-radius: 25px;
+}
+main .scroll-element > .img-block img {
+	max-width: 865px;
+	max-height: 485px;
+	width: auto;
+	height: auto;
+	border-radius: 25px;
+}
+main .scroll-element[data-index='0'] .item.right img,
+main .scroll-element[data-index='2'] .item.right img {
+	opacity: 0.2;
+}
 main .scroll-element .gallery {
 	display: block;
 	float: left;
@@ -356,11 +380,7 @@ main .item .bg {
 	background: transparent url('../img/svyatoch.png') 0 0 no-repeat;
 	background-size: contain;
 	background-position: 50px 0;
-	// opacity: 0.2;
-}
-main .scroll-element[data-index='0'] .item.right img,
-main .scroll-element[data-index='2'] .item.right img {
-	// opacity: 0.2;
+	opacity: 0.2;
 }
 main .item.right h3 {
 	margin: 0;
@@ -387,12 +407,6 @@ main .item.right .colored {
 	/* bottom: 30px; */
 	/* right: 120px; */
 	padding: 20px 30px;
-}
-main .scroll-element[data-index="0"] .item.left {
-	background-image: url('../img/refs/man_2.jpg');
-	background-position: center;
-	background-size: cover;
-	/* background-attachment: fixed; */
 }
 main .scroll-element .btn{
 	display: block;
@@ -443,6 +457,6 @@ main .popup.visible {
 	display: block;
 }
 
-#mapid { 
-	height: 500px; 
+#mapid {
+	height: 500px;
 }
