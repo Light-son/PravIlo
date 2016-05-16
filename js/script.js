@@ -15,6 +15,9 @@
 				e.preventDefault();
 			}
 			else if ( me.is('[data-popup]') ) {
+				// if (me.is('[data-popup]="bye"') ) {
+				// 	$('.img-block.visible').removeClass('visible');
+				// }
 				$('.popup[data-popup="'+ me.attr('data-popup') +'"]').addClass('visible');
 				e.preventDefault();
 			}
@@ -26,6 +29,14 @@
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
 				console.log('INDEX :' + index);
 			}
+/*<input class="" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
+<div class="popup" data-popup="callback">
+	<form class="callbackform" action="" method="get"><!-- callbackform -->
+		<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="Телефон" required><!-- CM jQuery плагин-->
+		<label for="name">Имя</label><input id="name" type="text" placeholder="Ваше имя (не обязательно)">
+		<!-- <input type="email" placeholder="Email"> -->
+		<!-- <textarea placeholder="Сообщение"></textarea> -->
+		<input class="popup-close" type="submit"*/
 
 		});
 	});

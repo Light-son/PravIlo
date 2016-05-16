@@ -6,8 +6,10 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Georgia';/* 'Izhitsa'; */
-	background-image: url('../img/bg.png');
+	background-image: url('../img/refs/sunflowers.jpg');/*main-bg_3.jpg*/
 	background-attachment: fixed;
+	background-size: cover;/*см!!!*/
+	background-position: top center;
 }
 
 .fancybox-margin {
@@ -17,13 +19,103 @@ body {
 a, a:hover, a:active, a:focus, a:visited {
 	text-decoration: none;
 }
-.clr {
+
+/* .clearfix {
 	content: '';
 	display: block;
 	clear: both;
+} */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
 }
-.visible {
+.clearfix:after {
+  clear: both;
+}
+
+.popup {
+	display: none;
+/* 	float: left; */
+	border: 4px solid #8f0209;
+	background-color: #f2d602;
+	color: #8f0209;
+}
+.popup.visible {
 	display: block;
+}
+.popup[data-popup="callback"]{
+	width: 350px;
+	height: 300px;
+	padding: 12px;
+}
+.popup[data-popup="bye"]{
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	z-index: 999;
+}
+.popup form {
+	display: block;
+	width: 865px;
+	height: 460px!important;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 12px;
+	border-radius: 25px;
+}
+.popup h2 {
+	color: #eee;
+	padding: 0;
+	margin: 30px 0 30px;
+	text-align: center;
+}
+.popup input {
+	display: block;
+	width: 360px;
+	height: 40px;
+	padding: 0 10px;
+	margin: 10px auto;
+	font-size: 18px;
+	border: 1px solid #a2afbd;
+}
+.popup input[type="submit"] {
+	display: block;
+	position: relative;
+	height: 50px;
+	margin-top: 40px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #ac4a42;
+	border: 0;
+	/*border-bottom: 4px solid #ac4a42;*/
+	cursor: pointer;
+}
+.popup input[type="submit"]:hover {
+	color: #ccc;
+}
+.popup input[type="submit"]:after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 360px;
+	height: 50px;
+	background: #ac4a42;/*rgba(0, 0, 0, 0.9);*/
+}
+
+#mapid {
+	height: 500px;
 }
 
 header, main, footer, section {
@@ -43,22 +135,24 @@ main .container {
 	margin: 0 auto!important;
 	position: relative;
 	clear: both;
-} */
-
+}
 header .container::after,
+main .container::after,
 footer .container::after,
 section .container::after,
 header .container::before,
+main .container::before,
 footer .container::before,
 section .container::before {
 	content: "";
 	display: block;
 	clear: both;
-}
+} */
 
-main.container {        /* при boots закоментить */
+/* при boots закоментить: */
+/* main.container {
 	height: calc(100vh-240px);
-}
+} */
 
 header {
 	/* height: 315px; */
@@ -78,9 +172,9 @@ header .top {
 header .top .item {
 	display: block;
 	float: left;
-	/* width: 380px; */
-	height: 180px;
-	padding-top: 30px;
+	width: 380px;
+	height: auto;/*180px*/
+	padding: 30px 0 20px;
 }
 header .top .heading {
 	/*  */
@@ -103,7 +197,7 @@ header .top .logo img {
 	/*  */
 }
 header .top .contacts {
-	/*  */
+	height: auto;
 }
 header .top .contacts .tel {
 	display: block;
@@ -131,7 +225,8 @@ header .top .contacts .tel a:active */ {
 	font-weight: bold;
 
 }
-header .top .contacts input[data-popup="callback"] {
+header .top .contacts input[data-popup="callback"],
+header .callbackform input[type="submit"] {
 	display: block;
 	float: right;
 	margin: 0;
@@ -145,7 +240,6 @@ header .top .contacts input[data-popup="callback"] {
 	font-weight: bold;
 	background-color: #8f0209;
 	color: #f2d602;
-
 }
 header .top .contacts input[data-popup="callback"]:hover {
 /* 	background-color: #730207;
@@ -157,15 +251,22 @@ header .top .contacts input[data-popup="callback"]:hover {
 	color: #8f0209;
 }
 header .callbackform {
-	display: none;
+	display: block;
 	z-index: 3;
-	position: relative;
+	/* position: relative;
 	top: -25px;
-	right: 100px;
-	width: 250px;
-	height: 250px;
-	border: 1px solid gray;
+	right: 0; *//*100px*/
+	width: 350px;
+	height: 300px;
+	margin: 50px 0 0;
+	padding: 10px;
 	border-radius: 20px;
+	border: 4px solid #8f0209;
+	background-color: #f2d602;
+	color: #8f0209;
+}
+header .callbackform.visible {
+	display: block;
 }
 header .callbackform label {
 	width: 100%;
@@ -184,9 +285,7 @@ header .callbackform input[type="tel"] {
 header .callbackform input[type="text"] {
 	/*  */
 }
-header .callbackform input[type="submit"] {
-	/*  */
-}
+
 /* #menu {
 	height: 135px;
 	padding-bottom: 30px;
@@ -269,18 +368,15 @@ header .callbackform input[type="submit"] {
 
 
 main {
-/* 	width: 100%;
-	height: 500px; */
+/*	height: 500px; */
 }
 main .container {
-	width: 1170px;
-	height: 560px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	width: 1170px;/*см при бутстрапе*/
+	height: 560px;/*см при бутстрапе*/
+	margin: 20px auto;/*см при бутстрапе*/
 	padding: 0;
-	border: 1px solid gray;
-	background-color: #FFF3A2;
 	border-radius: 25px;
+	background-color: #FFF3A2;
 }
 main .scroll-element {
 	display: none;
@@ -298,6 +394,15 @@ main .scroll-element[data-index="2"] .item.left {
 	background-size: cover;
 	/* background-attachment: fixed; */
 }
+/* main .scroll-element .scroll-vertical {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 10px;
+	height: 500px;
+	outline: 1px solid green;
+} */
 main .scroll-element > .img-block {
 	display: inline-block;
 	width: 865px;
@@ -315,42 +420,75 @@ main .scroll-element[data-index='0'] .item.right img,
 main .scroll-element[data-index='2'] .item.right img {
 	opacity: 0.2;
 }
-main .scroll-element .gallery {
+main .gallery {
 	display: block;
 	float: left;
-	width: 1080px;
+	width: 100%;/*1080px*/
 	height: 500px;
 	text-align: center;
 }
-main .scroll-element .gallery .column {
+main .gallery .column {
 	display: block;
 	float: left;
-    width: 585px;
+    width: 600px;
 	height: 500px;
 }
-main .scroll-element .gallery .column.side {
-	width: 235px;
+main .gallery .column.side {
+	width: 255px;
 }
-main .scroll-element .gallery .column.side .wrap {
+/* main .gallery .column.side .wrap {
 	display: block;
 	float: left;
 	width: 235px;
 	height: 235px;
 	margin: 0 0 10px 0;
 }
-main .scroll-element .gallery .column.side .wrap img {
+main .gallery .column.side .wrap img {
 	width: auto;
 	height: auto;
 	max-width: 235px;
 	max-height: 235px;
-}
-main .scroll-element .scroll-vertical {
+} */
+main .gallery .column a.fancybox,
+main .gallery .column a.various.iframe {
 	display: block;
 	float: left;
-	width: 20px;
-	height: 500px;
-	border: 1px solid green;
+	width: 580px;
+	height: 495px;
+	margin: 0 20px 25px 0;
+	border-radius: 25px;
+	overflow: hidden;
+	/* border: 2px solid red; */
+    border-radius: 25px;
+	/* text-align: center; */
 }
+main .gallery .column.side a.fancybox,
+main .gallery .column.side a.various.iframe {
+	width: 235px;
+	height: 235px;
+}
+main .gallery .column.side a.various.iframe {
+	font-family: Georgia;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: #f2d602;
+	color: #8f0209;
+	padding: 10px;/*15px*/
+}
+main .gallery .column a.fancybox:last-child,
+main .gallery .column a.various.iframe:last-child {
+	margin-bottom: 0;
+}
+main .gallery .column a.fancybox img,
+main .gallery .column a.various.iframe img {
+	width: 100%;
+	height: auto;
+	/* border-radius: 25px; */
+}
+main .gallery .column a.various.iframe img {
+	border-radius: 25px;
+}
+
 main .item {
 	display: block;
 	float: left;
@@ -371,6 +509,8 @@ main .item.left {
 main .item.left.colored {
 	background-color: #f2d602;
 	font-size: 30px;
+	position: absolute;
+	top: 30px;
 }
 main .item.left .tel {
 	display: block;
@@ -411,7 +551,7 @@ main .item .bg {
 	background: transparent url('../img/svyatoch.png') 0 0 no-repeat;
 	background-size: contain;
 	background-position: 50px 0;
-	opacity: 0.2;
+	opacity: 0.15;
 }
 /* main .item .contentwrapper {
 	display: block;
@@ -430,7 +570,7 @@ main .item.right p {
 	text-indent: 20px;
 }
 main .item.right .uncolored {
-	height: 270px;
+	height: 250px;
 	text-indent: 30px;
 	/* outline: 1px solid gray; */
 }
@@ -438,7 +578,7 @@ main .item.right .colored {
 	display: block;
 	float: left;
 	width: 540px;
-	height: 230px;
+	height: 250px;
 	background-color: #f2d602;
 	border-radius: 30px;
 	/* position: absolute; */
@@ -487,15 +627,3 @@ main .scroll-element .training.btn {
 	color: #8f0209;
 } */
 
-
-
-main .popup {
-	display: none;
-}
-main .popup.visible {
-	display: block;
-}
-
-#mapid {
-	height: 500px;
-}
