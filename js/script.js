@@ -39,5 +39,22 @@
 		<input class="popup-close" type="submit"*/
 
 		});
+
+		// $(document).on('mouseover', function (e){
+		// 	var me = $(e.target);
+		// 	if ( me.is('.logo > img') ){
+		// 		$('.logo > img').fadeIn(200, function() {
+		// 			$('.logo > img').attr('src', 'img/logo-lada-light.png');
+		// 		});
+		// 	};
+		// });
+		// $(document).on('mouseout', function (e){
+		// 	var me = $(e.target);
+		// 	if ( me.is('.logo > img') ){
+		// 		$('.logo > img').fadeIn(200, function() {
+		// 			$('.logo > img').attr('src', 'img/logo-lada.png');
+		// 		});
+		// 	};
+		// });
 	});
 })(jQuery);

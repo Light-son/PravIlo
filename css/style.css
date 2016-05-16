@@ -394,7 +394,15 @@ main .container {
 	margin: 20px auto;/*см при бутстрапе*/
 	padding: 0;
 	border-radius: 25px;
-	background-color: #FFF3A2;
+	// background-color: #FFF3A2;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff3a2+0,efda3b+55,f2e371+96,cec484+100 */
+	background: rgb(255,243,162); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(255,243,162,1) 0%, rgba(239,218,59,1) 55%, rgba(242,227,113,1) 96%, rgba(206,196,132,1) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,243,162,1) 0%,rgba(239,218,59,1) 55%,rgba(242,227,113,1) 96%,rgba(206,196,132,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  rgba(255,243,162,1) 0%,rgba(239,218,59,1) 55%,rgba(242,227,113,1) 96%,rgba(206,196,132,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff3a2', endColorstr='#cec484',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 main .scroll-element {
 	display: none;
