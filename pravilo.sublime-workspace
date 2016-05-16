@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 11154,
+				"buffer_size": 11437,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 11774,
+				"buffer_size": 12181,
 				"line_ending": "Windows"
 			}
 		}
@@ -1207,28 +1207,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11154,
+						"buffer_size": 11437,
 						"regions":
 						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										4922,
-										4923
-									]
-								],
-								"scope": "variable.parameter"
-							}
 						},
 						"selection":
 						[
 							[
-								4966,
-								4966
+								5155,
+								5155
 							]
 						],
 						"settings":
@@ -1292,15 +1279,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11774,
+						"buffer_size": 12181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10000,
-								10000
+								0,
+								0
 							]
 						],
 						"settings":
