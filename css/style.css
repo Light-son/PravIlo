@@ -522,6 +522,11 @@ main .item.left.colored {
 	font-size: 30px;
 	position: absolute;
 	top: 30px;
+	z-index: 3;
+	margin: 60px;
+	padding: 60px;
+	width: 380px;
+	height: 380px;
 }
 main .item.left .tel {
 	display: block;
@@ -638,4 +643,22 @@ main .scroll-element .training.btn {
 	background-color: #f2d602;
 	color: #8f0209;
 } */
+.animation {
+		-webkit-transition: all 0.15s ease-out 0s;
+	     -moz-transition: all 0.15s ease-out 0s;
+	     -o-transition: all 0.15s ease-out 0s;
+	     transition: all 0.15s ease-out 0s;
+}
+
+#map { 
+	height: 500px; 
+	border-radius: 25px;
+}
+
+.fullwidth {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 1110px !important;
+}
+
 

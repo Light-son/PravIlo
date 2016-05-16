@@ -18,7 +18,7 @@
 			<div class="container">
 				<div class="top">
 
-					<a class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item heading" href="javascript:void(0);"><!-- Заголовок сайта -->
+					<a class="animation col-xs-12 col-sm-12 col-md-5 col-lg-5 item heading" href="javascript:void(0);"><!-- Заголовок сайта -->
 						<h1>Кристал <span>ПравИло</span></h1>
 					</a>
 
@@ -32,7 +32,7 @@
 							<a href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
 							<div class="clearfix"></div>
 						</div>
-						<input class="" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
+						<input class="animation" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 						<div class="popup " data-popup="callback">
 							<form class="callbackform" action="/" method="get"><!-- callbackform -->
 								<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="Телефон" required><!-- CM jQuery плагин-->
@@ -54,11 +54,11 @@
 			<div class="container">
 				<nav><!-- class="top-menu"> -->
 					<ul>
-						<li class="parent" data-index="0"><a href="javascript:void(0);">ПравИло</a></li>
-						<li class="parent" data-index="1"><a href="javascript:void(0);">Купить ПравИло</a></li>
-						<li class="parent" data-index="2"><a href="javascript:void(0);">Тренировки</a></li>
-						<li class="parent" data-index="3"><a href="javascript:void(0);">Галерея</a></li>
-						<li class="parent" data-index="4"><a href="javascript:void(0);">Контакты</a></li>
+						<li class="parent" data-index="0"><a class="animation" href="javascript:void(0);">ПравИло</a></li>
+						<li class="parent" data-index="1"><a class="animation"href="javascript:void(0);">Купить ПравИло</a></li>
+						<li class="parent" data-index="2"><a class="animation"href="javascript:void(0);">Тренировки</a></li>
+						<li class="parent" data-index="3"><a class="animation"href="javascript:void(0);">Галерея</a></li>
+						<li class="parent" data-index="4"><a class="animation"href="javascript:void(0);">Контакты</a></li>
 						<!-- <li class="parent" data-index="5"><a  class="parent"href="javascript:void(0);">Отзывы</a></li> -->
 						<div class="clearfix"></div>
 					</ul>
@@ -262,8 +262,9 @@ bootstrap version!!!(cm 14min video)
 					</div> -->
 					<div class="clearfix"></div>
 				</div>
-				<!-- <div id="mapid"></div> -->
+				
 				<div class="scroll-element" data-index="4"><!--CM-->
+
 					<div class="item left colored">
 					<h2>Наши контакты:</h2>
 						<p>Украина</p>
@@ -275,8 +276,8 @@ bootstrap version!!!(cm 14min video)
 							<div class="clearfix"></div>
 						</div>
 					</div>
-					<div class="item right">
-
+					<div class="item right fullwidth">
+						<div class="" id="map"></div>
 						<!-- <img src="img/screenshot_5.jpg" alt="ПравИло"> -->
 					</div>
 					<div class="clearfix"></div>
@@ -285,6 +286,9 @@ bootstrap version!!!(cm 14min video)
 			</div><!-- end: container -->
 		</main>
 
-		<!-- <script src="js/leaf-map.js"></script> -->
+		<script async defer
+		      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz6eLo5feWbjAFpd6qV0c1tN5Cl2X0--4&callback=initMap">
+		    </script>
+		    <script async defer src="js/google-map.js"></script>
 </body>
 </html>
