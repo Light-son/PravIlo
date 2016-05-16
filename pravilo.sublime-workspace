@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"h",
+				"h-a	height: auto;"
+			],
+			[
 				"d",
 				"d-n	display: none;"
 			],
@@ -106,10 +110,6 @@
 			[
 				"lsn",
 				"lis-n	list-style: none;"
-			],
-			[
-				"h",
-				"height"
 			],
 			[
 				"he",
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 9767,
+				"buffer_size": 11437,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 11613,
+				"buffer_size": 12181,
 				"line_ending": "Windows"
 			}
 		}
@@ -877,7 +877,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -925,6 +925,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n						<p><strong></strong></p>",
 			"\n.popup",
 			"refs/",
 			"<div class=\"wrap\">",
@@ -1051,8 +1052,7 @@
 			"<?php",
 			"<\\?php echo (.*); \\?>",
 			"VK",
-			"URL",
-			"Name"
+			"URL"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1207,28 +1207,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9767,
+						"buffer_size": 11437,
 						"regions":
 						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										5107,
-										5108
-									]
-								],
-								"scope": "variable.parameter"
-							}
 						},
 						"selection":
 						[
 							[
-								4929,
-								4929
+								5155,
+								5155
 							]
 						],
 						"settings":
@@ -1241,11 +1228,11 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 3,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2223.0,
+						"translation.y": 1243.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1283,7 +1270,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1292,15 +1279,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11613,
+						"buffer_size": 12181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10510,
-								10510
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1315,10 +1302,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 10637.0,
+						"translation.y": 7260.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1326,7 +1313,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 35.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -1379,7 +1366,7 @@
 	"project": "pravilo.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 40.0
 	},
 	"save_all_on_build": false,
 	"select_file":
