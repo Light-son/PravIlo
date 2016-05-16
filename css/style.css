@@ -513,7 +513,7 @@ main .item.left {
 	width: 500px;
 	height: 500px;
 	text-align: center;
-	padding-top: 10px;
+	/* padding-top: 10px; */
 	/* margin: 15px 15px 15px 0; */
 	/* margin: 0 15px 0 0!important; */
 }
@@ -583,7 +583,8 @@ main .item.right h3 {
 }
 main .item.right p {
 	font-family: serif;
-	text-indent: 20px;
+	text-indent: 40px;
+	text-align: justify;
 }
 main .item.right .uncolored {
 	height: 250px;
@@ -613,14 +614,16 @@ main .scroll-element .btn{
 	cursor: pointer;
 }
 main .scroll-element .buy.btn {
-	bottom: 66px;
-	right: 270px;
+	display: block;
+	float: none;
 	width: 370px;
 	height: 75px;
+	margin: -95px 0 0 65px;
 	padding: 12px;
 	border: 4px solid #8f0209;
 	background-color: #f2d602;
 	color: #8f0209;
+	z-index: 3;
 }
 main .scroll-element .btn:hover {
 	background-color: #8f0209;
@@ -649,8 +652,8 @@ main .scroll-element .training.btn {
 	     transition: all 0.15s ease-out 0s;
 }
 
-#map { 
-	height: 500px; 
+#map {
+	height: 500px;
 	border-radius: 25px;
 }
 
