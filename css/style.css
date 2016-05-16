@@ -420,6 +420,17 @@ main .scroll-element[data-index='0'] .item.right img,
 main .scroll-element[data-index='2'] .item.right img {
 	opacity: 0.2;
 }
+main .page {
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto;
+	max-height: ;
+}
+main .page p,
+main .page ul {
+	color: #8f0209;
+}
 main .gallery {
 	display: block;
 	float: left;
@@ -534,6 +545,7 @@ main .item.left img {
 	height: auto;
 	max-width: 500px;
 	max-height: 500px;
+	border-radius: 25px;
 }
 main .item.right {
 	width: 578px;
