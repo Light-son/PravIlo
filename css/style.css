@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
 *{
 	box-sizing: border-box;
 }
@@ -5,7 +7,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Georgia';/* 'Izhitsa'; */
+	font-family: 'Lora', serif;
 	background-image: url('../img/refs/sunflowers.jpg');/*main-bg_3.jpg*/
 	background-attachment: fixed;
 	background-size: cover;/*см!!!*/
@@ -235,7 +237,7 @@ header .callbackform input[type="submit"] {
 	height: 48px;
 	border: none;
 	border-radius: 25px;
-	font-family: Georgia;
+	font-family: 'Roboto Slab';
 	font-size: 32px;
 	font-weight: bold;
 	background-color: #8f0209;
@@ -300,7 +302,14 @@ header .callbackform input[type="text"] {
 } */
 #menu .container {
     border-radius: 20px;
-    background-color: #8f0209;
+    // background-color: #8f0209;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1171c+1,8e0502+16,8f0209+89,c1171c+100 */
+    background: #c1171c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c1171c 1%, #8e0502 16%, #8f0209 89%, #c1171c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c1171c 1%,#8e0502 16%,#8f0209 89%,#c1171c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c1171c 1%,#8e0502 16%,#8f0209 89%,#c1171c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1171c', endColorstr='#c1171c',GradientType=0 ); /* IE6-9 */
+
 }
 /* #menu nav {
 	height: 135px;
@@ -353,14 +362,23 @@ header .callbackform input[type="text"] {
     width: 100%;
     text-align: center;
     color: #f2d602;
+
+
+
     font-size: 35px;
     padding: 5px 26px;
 }
 #menu nav ul li:hover a {
 /* 	background-color: rgba(0, 0, 0, 0.2);
 	color: orange; */
-	background-color: #f2d602;
+	// background-color: #f2d602;
 	color: #8f0209;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2e371+47,f2e371+51,ffffff+100&0.53+0,1+5,1+95,0.51+100 */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.53) 0%, rgba(254,252,240,1) 5%, rgba(242,227,113,1) 47%, rgba(242,227,113,1) 51%, rgba(254,252,241,1) 95%, rgba(255,255,255,0.51) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.53) 0%,rgba(254,252,240,1) 5%,rgba(242,227,113,1) 47%,rgba(242,227,113,1) 51%,rgba(254,252,241,1) 95%,rgba(255,255,255,0.51) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.53) 0%,rgba(254,252,240,1) 5%,rgba(242,227,113,1) 47%,rgba(242,227,113,1) 51%,rgba(254,252,241,1) 95%,rgba(255,255,255,0.51) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87ffffff', endColorstr='#82ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 /* #menu nav ul li:nth-child(2) a {
 	padding: 25px 15px;
@@ -646,10 +664,10 @@ main .scroll-element .training.btn {
 	color: #8f0209;
 } */
 .animation {
-		-webkit-transition: all 0.15s ease-out 0s;
-	     -moz-transition: all 0.15s ease-out 0s;
-	     -o-transition: all 0.15s ease-out 0s;
-	     transition: all 0.15s ease-out 0s;
+		-webkit-transition: all 0.2s ease-out 0.05s;
+	     -moz-transition: all 0.2s ease-out 0.05s;
+	     -o-transition: all 0.2s ease-out 0.05s;
+	     transition: all 0.2s ease-out 0.05s;
 }
 
 #map {
