@@ -29,6 +29,9 @@
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
 				console.log('INDEX :' + index);
 			}
+
+			// $('.empty').addClass('showFromHidden');
+			// $('.empty').removeClass('empty');
 /*<input class="" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 <div class="popup" data-popup="callback">
 	<form class="callbackform" action="" method="get"><!-- callbackform -->
@@ -56,5 +59,7 @@
 		// 		});
 		// 	};
 		// });
+
+
 	});
 })(jQuery);
