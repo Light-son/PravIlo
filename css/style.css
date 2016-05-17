@@ -209,7 +209,7 @@ header .top .contacts .tel {
 	padding: 0;
 	height: 105px;
 	color: #fff4cf;
-	font-family: 'Times New Roman', sans-serif;
+	font-family: 'Lora', sans-serif;
 }
 header .top .contacts .tel a {
 	display: block;
@@ -251,7 +251,7 @@ header .top .contacts input[data-popup="callback"]:hover {
 	transition-delay: 000ms;
 	transition-property: color, background-color; */
 	background-color: #f2d602;
-	color: #8f0209;
+	color: white;
 }
 header .callbackform {
 	display: block;
@@ -391,7 +391,7 @@ main {
 }
 main .container {
 	width: 1170px;/*см при бутстрапе*/
-	height: 560px;/*см при бутстрапе*/
+	// height: 560px;/*см при бутстрапе*/
 	margin: 20px auto;/*см при бутстрапе*/
 	padding: 0;
 	border-radius: 25px;
@@ -532,7 +532,7 @@ main .gallery .column a.various.iframe img {
 main .item {
 	display: block;
 	float: left;
-	height: 500px;/*
+	// height: 500px;/*
 	outline: 1px solid red; */
 	border-radius: 25px;
 	font-size: 20px;
@@ -570,7 +570,7 @@ main .item.left .tel a {
     margin: 0 0 0 0;
     /* padding: 0 025px; */
     font-size: 30px;
-    font-family: 'Times New Roman';
+    font-family: 'Lora';
     color: #8f0209;
 }
 main .item.left img {
@@ -597,7 +597,7 @@ main .item .bg {
 	background: transparent url('../img/svyatoch.png') 0 0 no-repeat;
 	background-size: contain;
 	background-position: 50px 0;
-	opacity: 0.15;
+	opacity: 0.25;
 }
 /* main .item .contentwrapper {
 	display: block;
@@ -731,6 +731,37 @@ h3, h2 {
 
 .bordered {
 	border: 5px solid white;
+}
+
+.special-button {
+		color: #f2d602;
+		padding: 10px 20px;
+		background: -moz-linear-gradient(
+			top,
+			#8f0209 0%,
+			#8f5003);
+		background: -webkit-gradient(
+			linear, left top, left bottom,
+			from(#8f0209),
+			to(#8f5003));
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		border: 1px solid #ebe38a;
+		-moz-box-shadow:
+			0px 1px 3px rgba(33,1,1,0.5),
+			inset 0px 0px 1px rgba(255,255,255,1);
+		-webkit-box-shadow:
+			0px 1px 3px rgba(33,1,1,0.5),
+			inset 0px 0px 1px rgba(255,255,255,1);
+		box-shadow:
+			0px 1px 3px rgba(33,1,1,0.5),
+			inset 0px 0px 1px rgba(255,255,255,1);
+		text-shadow:
+			0px -1px 0px rgba(74,0,0,0.7),
+			0px 1px 0px rgba(61,2,2,0.3);
+	
+
 }
 
 
