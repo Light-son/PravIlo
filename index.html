@@ -31,12 +31,13 @@
 				</div>
 				<input class="animation special-button visible" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 
-				<form class="callbackform" action="/form" method="get" data-popup="callback"> <!-- callbackform -->
-					<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="+38(___) ___ __ __" required><!-- CM jQuery плагин-->
-					<label for="name">Имя</label><input id="name" type="text" placeholder="Не обязательно">
-					<input class="animation special-button form-close" type="submit" value="Заказать звонок">
+				<form class="callbackform" action="/call-order.php" method="post" data-popup="callback"> <!-- callbackform -->
+					<label for="tel">Телефон</label><input id="tel" type="tel"  required name="tel"/><!-- CM jQuery плагин-->
+					<label for="name">Имя</label><input id="name" type="text" placeholder="Не обязательно"  name="name"/>
+					<input class="animation special-button form-close" type="submit" value="Заказать звонок"/>
 					<div class="clearfix"></div>
 				</form>
+
 
 				<div class="clearfix"></div>
 			</div><!-- end: item contacts -->
