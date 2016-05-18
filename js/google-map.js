@@ -13,10 +13,11 @@ window.initMap = function () {
     map: map,
     icon: 'img/Google-icon.png'
   });
+  $(document).on('mousemove', function (e){
+    google.maps.event.trigger(map, 'resize');
+  });
 
 };
 
-$(document).on('mousemove', function (e){
-	google.maps.event.trigger(map, 'resize');
-});
+
 

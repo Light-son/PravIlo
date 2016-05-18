@@ -18,14 +18,14 @@
 	// $_POST['tel'] = 3351212;
 	// $_POST['name'] = 'Dima';
 
-	if(isset($_GET['tel']) &&
-		isset($_GET['name']))
+	if(isset($_POST['tel']) &&
+		isset($_POST['name']))
 	{
 		$tel = $_GET['tel'];
 		$name = $_GET['name'];
 
 
-		$query = "INSERT INTO call_orders (`tel`,`name`) VALUES ($tel, '$name')";
+		$query = "INSERT INTO call_orders (`tel`,`name`) VALUES ('$tel', '$name')";
 
 		// $connection->query(	$query);
 	}
