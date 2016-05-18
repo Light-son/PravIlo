@@ -17,35 +17,31 @@
 <header>
 	<div class="container">
 		<div class="top">
+			<a class="animation col-xs-12 col-sm-12 col-md-5 col-lg-5 item heading" href="javascript:void(0);"><h1>Кристал <span>ПравИло</span></h1></a>
 
+			<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 item logo"><!-- Лого -->
+				<img src="img/logo-lada-light.png" alt="ПравИло">
+			</div>
 
-					<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 item logo"><!-- Лого -->
-						<img src="img/logo-lada-light.png" alt="ПравИло">
-					</div>
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item contacts"><!-- Контактные данные -->
+				<div class="tel">
+					<a class="animation" href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
+					<a class="animation" href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
+					<div class="clearfix"></div>
+				</div>
+				<input class="animation special-button visible" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 
-					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item contacts"><!-- Контактные данные -->
-						<div class="tel">
-							<a class="animation" href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
-							<a class="animation" href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
-							<div class="clearfix"></div>
-						</div>
-						<input class="animation special-button" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 				<form class="callbackform" action="/form" method="get" data-popup="callback"> <!-- callbackform -->
 					<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="+38(___) ___ __ __" required><!-- CM jQuery плагин-->
 					<label for="name">Имя</label><input id="name" type="text" placeholder="Не обязательно">
-					<input class="form-close" type="submit" value="Заказать звонок">
+					<input class="animation special-button form-close" type="submit" value="Заказать звонок">
 					<div class="clearfix"></div>
 				</form>
-							
-						</div>
-						<div class="clearfix"></div>
-					</div><!-- end: item contacts -->
 
 				<div class="clearfix"></div>
-
+			</div><!-- end: item contacts -->
 			<div class="clearfix"></div>
 		</div><!-- end: header>.top -->
-		<div class="clearfix"></div>
 	</div><!-- end: .container -->
 </header>
 
@@ -177,7 +173,7 @@ bootstrap version!!!(cm 14min video)
 				</div>
 				<div class="clearfix"></div>
 			</div> -->
-			<div class="popup" data-popup="bye">
+			<div class="popup" data-popup="call-order">
 				<form class="bye-form" action="/" method="get"><!-- bye-form -->
 					<div class="column">
 						<label for="name">Имя</label><input id="name" type="text" required>
@@ -290,6 +286,6 @@ bootstrap version!!!(cm 14min video)
 
 		      src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAz6eLo5feWbjAFpd6qV0c1tN5Cl2X0--4&callback=initMap">
 		    </script>
-		    
+
 </body>
 </html>

@@ -523,15 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 16296,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/script.js",
-			"settings":
-			{
-				"buffer_size": 2468,
+				"buffer_size": 11285,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 19520,
+				"buffer_size": 18784,
 				"line_ending": "Windows"
 			}
 		}
@@ -925,6 +917,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data-modal",
+			"font-family",
 			"row",
 			".popup",
 			"input",
@@ -1050,9 +1044,7 @@
 			"\\t",
 			"\\n\\<",
 			"\\n<",
-			"  ",
-			"<\\?php echo (.*); \\?>",
-			"<?php"
+			"  "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1198,7 +1190,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1207,7 +1199,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16296,
+						"buffer_size": 11285,
 						"regions":
 						{
 							"TagLint":
@@ -1217,8 +1209,8 @@
 								"regions":
 								[
 									[
-										15985,
-										15988
+										11031,
+										11034
 									]
 								],
 								"scope": "variable.parameter"
@@ -1227,8 +1219,8 @@
 						"selection":
 						[
 							[
-								835,
-								823
+								6831,
+								6831
 							]
 						],
 						"settings":
@@ -1245,62 +1237,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 171.0,
+						"translation.y": 3306.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2468,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1151,
-								1151
-							]
-						],
-						"settings":
-						{
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_thread_running": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 318.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19520,
+						"buffer_size": 18784,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12136,
-								12136
+								2240,
+								2240
 							]
 						],
 						"settings":
@@ -1316,10 +1273,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 12233.0,
+						"translation.y": 2124.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1537,7 +1494,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":

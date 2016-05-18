@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
-
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 *{
 	box-sizing: border-box;
 }
@@ -120,7 +120,7 @@ a, a:hover, a:active, a:focus, a:visited {
 	color: #8f0209;
 }
 .popup .bye-form input[type="tel"] {
-	font-family: 'Times New Roman', sans-serif;
+	font-family: 'Lora', sans-serif;
 }
 .popup .bye-form input[type="text"] {
 	color: #8f0209!important;
@@ -309,16 +309,18 @@ header .callbackform {
 	display: none;
 	z-index: 3;
 	position: relative;
-	width: 335px;
+	width: 355px;
 	height: 280px!important;
-	margin: 90px 0 0 45px;
+	margin: 90px 0 0 27px;
 	padding: 5px 15px;
 	text-align: center;
 	border-radius: 25px;
 	border: 4px solid #8f0209;
 	background-color: #f2d602;
 	color: #8f0209;
-	}
+	font-family: 'Lora';
+
+}
 header .callbackform label {
 	width: 100%;
 	margin: 0px 0 -5px;
@@ -352,9 +354,8 @@ header .callbackform > input[type="submit"] {
 	padding: 0;
 	width: 295px;
 	height: 46px;
-	border: 4px solid #8f0209;
 	border-radius: 25px;
-	font-family: Georgia;
+	font-family: Roboto Slab;
 	font-size: 28px;
 	font-weight: bold;
 	background-color: #8f0209;
@@ -362,8 +363,10 @@ header .callbackform > input[type="submit"] {
 }
 header .callbackform > input[type="submit"]:hover {
 	background-color: #f2d602;
-	color: #8f0209;
-	padding-top: -5px;
+	color: white;
+}
+header .callbackform > input[type="submit"]:hover {
+	/*  */
 }
 
 /* #menu {
@@ -836,7 +839,7 @@ h3, h2 {
 		text-shadow:
 			0px -1px 0px rgba(74,0,0,0.7),
 			0px 1px 0px rgba(61,2,2,0.3);
-	
+
 
 }
 
