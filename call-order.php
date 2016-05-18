@@ -15,19 +15,19 @@
 	// 	echo '<h1>SUBMIT</h1>';
 	// }
 
-	// $_POST['tel'] = 3351212;
+	// $_POST['tel'] = 335121212;
 	// $_POST['name'] = 'Dima';
 
 	if(isset($_POST['tel']) &&
 		isset($_POST['name']))
 	{
-		$tel = $_GET['tel'];
-		$name = $_GET['name'];
+		$tel = $_POST['tel'];
+		$name = $_POST['name'];
 
 
-		$query = "INSERT INTO call_orders (`tel`,`name`) VALUES ('$tel', '$name')";
+		$query = "INSERT INTO call_orders (tel, name) VALUES ('$tel', '$name')";
 
-		// $connection->query(	$query);
+		// $connection->query($query);
 	}
 	else
 	{

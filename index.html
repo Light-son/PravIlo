@@ -26,16 +26,16 @@
 
 			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item contacts"><!-- Контактные данные -->
 				<div class="tel">
-					<a class="animation" href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
-					<a class="animation" href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
+					<a class="animation" href="tel: +380934103679">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
+					<a class="animation" href="tel: +380973548285">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
 					<div class="clearfix"></div>
 				</div>
-				<input class="animation special-button visible" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
+				<input id="btnShow" class="animation special-button visible" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 
-				<form class="callbackform animation" action="call-order.php" method="post" data-popup="callback"> <!-- callbackform -->
-					<label for="phone">Телефон</label><input id="phone" type="tel" required>
+				<form  id="call-form" class="callbackform animation" action="call-order.php" method="POST" data-popup="callback"> <!-- callbackform -->
+					<label for="phone">Телефон</label><input id="phone" type="tel" required name="tel">
 					<label for="name">Имя</label><input id="name" type="text" placeholder="Не обязательно"  name="name"/>
-					<input class="animation special-button form-close" type="submit" value="Заказать звонок"/>
+					<button class="animation special-button form-close" type="submit" value="Заказать звонок"/></button>
 					<div class="clearfix"></div>
 				</form>
 
@@ -129,12 +129,12 @@ bootstrap version!!!(cm 14min video)
 						<li>Металлический каркас</li>
 						<li>Лебедка 1 шт</li>
 						<li>Хомуты 4 шт</li>
-						<li>Карабины 10 шт</li>
+						<li>Карабины 8 шт</li>
 						<li>Блоки 2 шт</li>
 						<li>Цепи 2 шт</li>
-						<li>Трос 10 м</li>
-						<li>Болты 36 шт</li>
-						<li>Ключ для сборки 1шт</li>
+						<li>Трос 8 м</li>
+						<li>Болты 50 шт</li>
+						<li>Ключ для сборки 2 шт</li>
 						<li>Сумка 1 шт</li>
 					</ul>
 					<p><strong>Доставка</strong></p>

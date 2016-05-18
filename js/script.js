@@ -30,15 +30,16 @@
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
 				// console.log('INDEX :' + index);
 			}
-			if ( me.is('input[data-popup="callback"]') ) {
-				$('input[data-popup="callback"]').removeClass('visible');
+			if ( me.is('#btnShow') ) {
+				me.removeClass('visible');
 				$('.callbackform').addClass('visible');
-				e.preventDefault();
+				// e.preventDefault();
 			}
-			if ( me.is('.form-close') ) {$("#leftFit").slideDown("slow")
-				$('input[data-popup="callback"]').addClass('visible');
-				$('.callbackform').removeClass('visible');
-				e.preventDefault();
+			if ( me.is('.form-close') ) {
+				// $("#leftFit").slideDown("slow")
+				$('#btnShow').addClass('visible');
+				$('#call-form').removeClass('visible');
+				// e.preventDefault();
 			}
 
 		});
