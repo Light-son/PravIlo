@@ -257,11 +257,11 @@ header .top .contacts .tel a:active */ {
 	font-weight: bold;
 
 }
-header .top .contacts input[data-popup="callback"] {
+header .top .contacts a.animation.special-button  {
 	display: none;
 	/* float: right; */
-	margin: 0 0 0 30px;
-	padding: 0;
+	margin: 95px 0 0 30px;
+	padding: 0 0px;
 	width: 355px;
 	height: 48px;
 	border: none;
@@ -272,33 +272,15 @@ header .top .contacts input[data-popup="callback"] {
 	background-color: #8f0209;
 	color: #f2d602;
 }
-/*main .button {
-	display: inline-block;
-	width: auto;
-	padding: 0 30px;
-	line-height: 46px;
-	vertical-align: middle;
-	text-align: center;
-	word-break: normal;
-	text-indent: 0;
-	float: none;
+header .top .contacts a.animation.special-button .text {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin: -3px 36px 0;
+	font-size: 34px;
 }
-main .slider .button {
-	display: inline-block;
-	width: 200px;
-	margin-top: 10px;
-	padding: 13px;
-	border: 1px solid #fff;
-	font-size: 15px;
-	font-weight: bold;
-	color: #fff;
-	background: rgba(220,31,39,.7);
-	transition-property: color,border,background;
-	transition-duration: 400ms;
-}
-*/
-
-header .top .contacts input[data-popup="callback"]:hover {
+header .top .contacts a.animation.special-button:hover {
 /* 	background-color: #730207;
 	color: #FFA500;
 	transition-duration: 500ms;

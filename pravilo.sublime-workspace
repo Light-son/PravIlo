@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"tra",
+				"transition-duration"
+			],
+			[
 				"h",
-				"hover"
+				"h	height"
 			],
 			[
 				"la",
@@ -510,10 +514,6 @@
 			[
 				"bgs",
 				"background-size"
-			],
-			[
-				"json",
-				"json_encode"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 11285,
+				"buffer_size": 12618,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,15 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 18784,
+				"buffer_size": 18726,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/script.js",
+			"settings":
+			{
+				"buffer_size": 1357,
 				"line_ending": "Windows"
 			}
 		}
@@ -733,11 +741,13 @@
 	"expanded_folders":
 	[
 		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo",
-		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/bootstrap",
-		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js"
+		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/css"
 	],
 	"file_history":
 	[
+		"/C/Users/User/Desktop/Pravilo/js/script.js",
+		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/css/style.css",
+		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js/jquery.maskedinput.js",
 		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js/script.js",
 		"/C/Users/User/Desktop/Project/css/style.css",
 		"/C/Users/User/Desktop/Project/css/popup.css",
@@ -749,7 +759,6 @@
 		"/C/Users/User/Desktop/Pravilo/index.html",
 		"/C/Users/User/Desktop/Pravilo/css/style.css",
 		"/C/Users/User/Desktop/Pravilo/css/fancybox.css",
-		"/C/Users/User/Desktop/Pravilo/js/script.js",
 		"/C/Users/User/Desktop/Pravilo/js/jquery-2.1.4.min.js",
 		"/D/!Nikolaev/WEB/!PROJECTS/2016/My-Portfolio/css/style.css",
 		"/D/!Nikolaev/WEB/!PROJECTS/2016/My-Portfolio/php/my-skills.php",
@@ -863,9 +872,7 @@
 		"/G/server/domains/kolkor/html/kolkor/pages/details/try.php",
 		"/G/server/domains/kolkor/html/kolkor/pages/details/tv.php",
 		"/G/server/domains/kolkor/html/kolkor/pages/order.php",
-		"/G/server/domains/kolkor/html/kolkor/pages/user.php",
-		"/G/server/domains/kolkor/html/kolkor/pages/user/admin.php",
-		"/G/server/domains/kolkor/html/kolkor/pages/user/customer.php"
+		"/G/server/domains/kolkor/html/kolkor/pages/user.php"
 	],
 	"find":
 	{
@@ -917,6 +924,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".bg",
+			"item le",
+			".animation",
+			"popup-close",
+			".popup-close",
+			"placeholder",
 			"data-modal",
 			"font-family",
 			"row",
@@ -1038,13 +1051,7 @@
 			"function (.*)\\((.*)\\) {",
 			"data-animated=\"0\"",
 			"<style",
-			"style",
-			"<",
-			"\\n<",
-			"\\t",
-			"\\n\\<",
-			"\\n<",
-			"  "
+			"style"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1190,7 +1197,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1199,7 +1206,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11285,
+						"buffer_size": 12618,
 						"regions":
 						{
 							"TagLint":
@@ -1209,8 +1216,8 @@
 								"regions":
 								[
 									[
-										11031,
-										11034
+										12364,
+										12367
 									]
 								],
 								"scope": "variable.parameter"
@@ -1219,8 +1226,8 @@
 						"selection":
 						[
 							[
-								6831,
-								6831
+								1452,
+								1456
 							]
 						],
 						"settings":
@@ -1237,10 +1244,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3306.0,
+						"translation.y": 453.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1249,15 +1256,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18784,
+						"buffer_size": 18726,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2240,
-								2240
+								4492,
+								4492
 							]
 						],
 						"settings":
@@ -1269,11 +1276,45 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/CSS3/CSS3.tmLanguage",
-							"tab_size": 2,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2124.0,
+						"translation.y": 4860.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Twilight (SL).tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1494,7 +1535,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":

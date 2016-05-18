@@ -5,9 +5,8 @@
 
 
 		// $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
-		$("#phone").mask("+9 9 (999) 999-99-99", {placeholder:"."});
-		$("#phone-bye").mask("+9 9 (999) 999-99-99", {placeholder:"."});
-
+		$("#phone").mask("+3 8 (999) 999-99-99", {placeholder: &#1645;});
+		$("#phone-bye").mask("+3 8 (999) 999-99-99", {placeholder: &#1645;});
 
 		$(document).on('click', function (e){
 			var me = $(e.target);
@@ -30,13 +29,13 @@
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
 				// console.log('INDEX :' + index);
 			}
-			if ( me.is('input[data-popup="callback"]') ) {
-				$('input[data-popup="callback"]').removeClass('visible');
+			if ( me.is('a[data-popup="callback"]') ) {
+				$('a[data-popup="callback"]').removeClass('visible');
 				$('.callbackform').addClass('visible');
 				e.preventDefault();
 			}
 			if ( me.is('.form-close') ) {$("#leftFit").slideDown("slow")
-				$('input[data-popup="callback"]').addClass('visible');
+				$('a[data-popup="callback"]').addClass('visible');
 				$('.callbackform').removeClass('visible');
 				e.preventDefault();
 			}
