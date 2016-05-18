@@ -14,279 +14,268 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-		<header>
-			<div class="container">
-				<div class="top">
+<header>
+	<div class="container">
+		<div class="top">
 
-					<a class="animation col-xs-12 col-sm-12 col-md-5 col-lg-5 item heading" href="javascript:void(0);"><!-- Заголовок сайта -->
-						<h1>Кристал <span>ПравИло</span></h1>
-					</a>
+			<a class="animation col-xs-12 col-sm-12 col-md-5 col-lg-5 item heading" href="javascript:void(0);"><h1>Кристал <span>ПравИло</span></h1></a><!-- Заголовок сайта -->
 
-					<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 item logo"><!-- Лого -->
-						<img src="img/logo-lada.png" alt="ПравИло">
-					</div>
-
-					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item contacts"><!-- Контактные данные -->
-						<div class="tel">
-							<a href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
-							<a href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
-							<div class="clearfix"></div>
-						</div>
-						<input class="animation" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
-						<div class="popup " data-popup="callback">
-							<form class="callbackform" action="/" method="get"><!-- callbackform -->
-								<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="Телефон" required><!-- CM jQuery плагин-->
-								<label for="name">Имя</label><input id="name" type="text" placeholder="Ваше имя (не обязательно)">
-								<input class="popup-close" type="submit" value="Заказать звонок">
-								<!-- <div class="clearfix"></div> -->
-							</form>
-						</div>
-						<div class="clearfix"></div>
-					</div><!-- end: item contacts -->
-
-					<div class="clearfix"></div>
-				</div><!-- end: header>.top -->
-				<div class="clearfix"></div>
-			</div><!-- end: .container -->
-		</header>
-
-		<section id="menu">
-			<div class="container">
-				<nav><!-- class="top-menu"> -->
-					<ul>
-						<li class="parent" data-index="0"><a class="animation" href="javascript:void(0);">ПравИло</a></li>
-						<li class="parent" data-index="1"><a class="animation"href="javascript:void(0);">Купить ПравИло</a></li>
-						<li class="parent" data-index="2"><a class="animation"href="javascript:void(0);">Тренировки</a></li>
-						<li class="parent" data-index="3"><a class="animation"href="javascript:void(0);">Галерея</a></li>
-						<li class="parent" data-index="4"><a class="animation"href="javascript:void(0);">Контакты</a></li>
-						<!-- <li class="parent" data-index="5"><a  class="parent"href="javascript:void(0);">Отзывы</a></li> -->
-						<div class="clearfix"></div>
-					</ul>
-				</nav>
+			<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 item logo"><!-- Лого -->
+				<img src="img/logo-lada.png" alt="ПравИло">
 			</div>
-		</section>
+
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 item contacts"><!-- Контактные данные -->
+				<div class="tel">
+					<a href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
+					<a href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
+					<div class="clearfix"></div>
+				</div>
+				<input class="animation visible" type="button" data-popup="callback" value="Заказать звонок!"> <!--shows callbackform -->
+				<form class="callbackform" action="/form" method="get" data-popup="callback"> <!-- callbackform -->
+					<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="+38(___) ___ __ __" required><!-- CM jQuery плагин-->
+					<label for="name">Имя</label><input id="name" type="text" placeholder="Не обязательно">
+					<input class="form-close" type="submit" value="Заказать звонок">
+					<div class="clearfix"></div>
+				</form>
+
+				<div class="clearfix"></div>
+			</div><!-- end: item contacts -->
+
+			<div class="clearfix"></div>
+		</div><!-- end: header>.top -->
+		<div class="clearfix"></div>
+	</div><!-- end: .container -->
+</header>
+
+<section id="menu">
+	<div class="container">
+		<nav><!-- class="top-menu"> -->
+			<ul>
+				<li class="parent" data-index="0"><a class="animation" href="javascript:void(0);">ПравИло</a></li>
+				<li class="parent" data-index="1"><a class="animation" href="javascript:void(0);">Купить ПравИло</a></li>
+				<li class="parent" data-index="2"><a class="animation" href="javascript:void(0);">Тренировки</a></li>
+				<li class="parent" data-index="3"><a class="animation" href="javascript:void(0);">Галерея</a></li>
+				<li class="parent" data-index="4"><a class="animation" href="javascript:void(0);">Контакты</a></li>
+				<!-- <li class="parent" data-index="5"><a  class="parent"href="javascript:void(0);">Отзывы</a></li> -->
+				<div class="clearfix"></div>
+			</ul>
+		</nav>
+	</div>
+</section>
 
 
-<!-- ТЗ!!!!!!!!
-
-формы+попап джиэс -
-кнопки
+<!-- ТЗ
+формы+попап: джиэс -
+кнопки +
 обстилить!!! творчество box-shadow? hover-effects gradient etc
 bootstrap version!!!(cm 14min video)
-~ посадить на модх -->
+?! посадить на модх -->
 
-		<main><!-- Секция контента -->
-			<div class="container">
-				<div class="scroll-element visible" data-index="0">
-					<div class="item left">
+<main><!-- Секция контента -->
+	<div class="container">
+		<div class="scroll-element visible" data-index="0">
+			<div class="item left">
 <!-- 							<a class="fancybox" href="img/refs/man_2.jpg" rel="some-group">
-								<img src="img/refs/man_2.jpg" alt="ПравИло">
-							</a> -->
-					</div>
-					<div class="item right">
-						<div class="bg"></div>
-						<div class="page page-two"> <!-- page-zero -->
-							<h3>Описание</h3>
-							<p>«ПравИло» - тренажер, который симметрично вытягивает тело - мышцы, суставы, связки, сухожилия, вынуждая мышцы прекратить напряженность и растянуться на максимальную длину, а все сухожилия приводя в максимально активное состояние.</p>
-							<ul>Тренировки на «ПравИло» это:
-								<li>Восстановление осанки;</li>
-								<li>Укрепление суставов и связок;</li>
-								<li>Укрепление сухожилий и мышц;</li>
-								<li>Высвобождение зажатых нервных окончаний;</li>
-								<li>Проработка всех блоков и зажимов в теле;</li>
-								<li>Улучшение кровообращения;</li>
-								<li>Развитие силы воли;</li>
-								<li>Повышение уверенности в себе;</li>
-								<li>Повышение внимания и уровня сознания;</li>
-								<li>Синхронизация полушарий головного мозга;</li>
-								<li>Повышение уровня физической силы и энергетики.</li>
-							</ul>
-							<p>После тренировки каждый чувствует: легкость тела, бодрость, прилив жизненных сил и энергии.
-							 	Если регулярно подвергать тело растяжкам на «ПравИло» - легко повысить двигательный тонус, улучшить подвижность суставов, восстановить нормальную работу всего опорно-двигательного аппарата, особенно после травм, заболеваний, нервных напряжений и стрессов.
-							</p>
-						</div>
-					</div> <!-- End(item right)-->
-					<div class="clearfix"></div>
+						<img src="img/refs/man_2.jpg" alt="ПравИло">
+					</a> -->
+			</div>
+			<div class="item right">
+				<div class="bg"></div>
+				<div class="page"> <!-- page-zero -->
+					<h3>Описание</h3>
+					<p>«ПравИло» - тренажер, который симметрично вытягивает тело - мышцы, суставы, связки, сухожилия, вынуждая мышцы прекратить напряженность и растянуться на максимальную длину, а все сухожилия приводя в максимально активное состояние.</p>
+					<ul>Тренировки на «ПравИло» это:
+						<li>Восстановление осанки;</li>
+						<li>Укрепление суставов и связок;</li>
+						<li>Укрепление сухожилий и мышц;</li>
+						<li>Высвобождение зажатых нервных окончаний;</li>
+						<li>Проработка всех блоков и зажимов в теле;</li>
+						<li>Улучшение кровообращения;</li>
+						<li>Развитие силы воли;</li>
+						<li>Повышение уверенности в себе;</li>
+						<li>Повышение внимания и уровня сознания;</li>
+						<li>Синхронизация полушарий головного мозга;</li>
+						<li>Повышение уровня физической силы и энергетики.</li>
+					</ul>
+					<p>После тренировки каждый чувствует: легкость тела, бодрость, прилив жизненных сил и энергии.
+					 	Если регулярно подвергать тело растяжкам на «ПравИло» - легко повысить двигательный тонус, улучшить подвижность суставов, восстановить нормальную работу всего опорно-двигательного аппарата, особенно после травм, заболеваний, нервных напряжений и стрессов.
+					</p>
 				</div>
+			</div> <!-- End(item right)-->
+			<div class="clearfix"></div>
+		</div>
 
-				<div class="scroll-element" data-index="1">
-					<div class="item left">
-						<a class="fancybox" href="img/refs/grisha.jpg" rel="some-group">
-							<img src="img/refs/grisha_1.jpg" alt="ПравИло">
-							<a href="javascript:void(0);" class="buy btn" data-popup="bye">Заказать!</a>
-						</a>
-<!-- 						<div class="img-block visible">
-
-						</div> -->
-					</div>
-					<div class="item right">
-						<div class="bg"></div>
-						<div class="page page-one">
-							<p><strong>Характеристики:</strong></p>
-							<ul>
-								<li>Вес тренажера 60 кг</li>
-								<li>ДхШхВ 3 х 2,5 х 1,5 метра</li>
-								<li>Лебедка 450 кг</li>
-								<li>Максимальный вес пользователя 125 кг</li>
-								<li>Тренажер разборной,</li>
-								<li>помещается в сумку 1,7 метра</li>
-							</ul>
-							<p><strong>Комплект:</strong></p>
-							<ul>
-								<li>Металлический каркас</li>
-								<li>Лебедка 1 шт</li>
-								<li>Хомуты 4 шт</li>
-								<li>Карабины 10 шт</li>
-								<li>Блоки 2 шт</li>
-								<li>Цепи 2 шт</li>
-								<li>Трос 10 м</li>
-								<li>Болты 36 шт</li>
-								<li>Ключ для сборки 1шт</li>
-								<li>Сумка 1 шт</li>
-							</ul>
-							<p><strong>Доставка</strong></p>
-							<ul>
-								<li>Самовывоз</li>
-								<li>«Новой Почтой»</li>
-							</ul>
-							<p><strong>Оплата</strong></p>
-							<ul>
-								<li>Наличными</li>
-								<li>Privat24</li>
-								<li>Visa</li>
-								<li>Наложенный платеж</li>
-							</ul>
-
-							<div class="additional">
-								<form action="/form" method="get">
-									<p><strong>Cопутствующий товар</strong></p>
-									<ul>
-										<li>1) Доска Евминова</li>
-										<li>2) Петля Глиссона</li>
-										<li>3) Резиновый жгут</li>
-										<li>4) Ручки для тяги</li>
-										<li>5) Деревянный ролик</li>
-									</ul>
-								</form>
-							</div>
-
-						</div><!-- END(page) -->
-					</div><!-- item right -->
-					<div class="clearfix"></div>
-
-					<!-- <div class="wrapper">
-						<div class="go left">
-							<div class="triangle l"></div>
-						</div>
-						<div class="slide"> -->
-						<!-- </div>
-						<div class="go right">
-							<div class="triangle r"></div>
-						</div>
-						<div class="clearfix"></div>
-					</div> -->
-					<div class="popup" data-popup="bye">
-						<form class="callbackform" action="/" method="get"><!-- callbackform -->
-							<div class="row">
-								<label for="name">Имя</label><input id="name" type="text" required>
-								<label for="second-name">Фамилия</label><input id="second-name" type="text">
-							</div>
-							<div class="row">
-								<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="+38(___) ___ __ __" required><!-- CM jQuery плагин-->
-								<label for="email">e-mail</label><input id="email" type="email" placeholder="Email">
-							</div>
-							<div class="row">
-								<label for="city">Город</label><input id="city" type="text"><!-- CM jQuery плагин-->
-								<label for="post">Нова Пошта</label><input id="post" type="text">
-							</div>
-							<div class="sub"><input type="submit" value="Заказать!"></div>
-							<div class="clearfix"></div>
+		<div class="scroll-element" data-index="1">
+			<div class="item left">
+				<a class="fancybox" href="img/refs/grisha.jpg" rel="some-group">
+					<img src="img/refs/grisha_1.jpg" alt="ПравИло">
+					<a href="javascript:void(0);" class="buy btn" data-popup="bye">Заказать!</a>
+				</a><!-- <div class="img-block visible"></div> -->
+			</div>
+			<div class="item right">
+				<div class="bg"></div>
+				<div class="page page-one">
+					<p><strong>Характеристики:</strong></p>
+					<ul>
+						<li>Вес тренажера 60 кг</li>
+						<li>ДхШхВ 3 х 2,5 х 1,5 метра</li>
+						<li>Лебедка 450 кг</li>
+						<li>Максимальный вес пользователя 125 кг</li>
+						<li>Тренажер разборной,</li>
+						<li>помещается в сумку 1,7 метра</li>
+					</ul>
+					<p><strong>Комплект:</strong></p>
+					<ul>
+						<li>Металлический каркас</li>
+						<li>Лебедка 1 шт</li>
+						<li>Хомуты 4 шт</li>
+						<li>Карабины 10 шт</li>
+						<li>Блоки 2 шт</li>
+						<li>Цепи 2 шт</li>
+						<li>Трос 10 м</li>
+						<li>Болты 36 шт</li>
+						<li>Ключ для сборки 1шт</li>
+						<li>Сумка 1 шт</li>
+					</ul>
+					<p><strong>Доставка</strong></p>
+					<ul>
+						<li>Самовывоз</li>
+						<li>«Новой Почтой»</li>
+					</ul>
+					<p><strong>Оплата</strong></p>
+					<ul>
+						<li>Наличными</li>
+						<li>Privat24</li>
+						<li>Visa</li>
+						<li>Наложенный платеж</li>
+					</ul>
+					<div class="additional">
+						<form action="/form" method="get">
+							<p><strong>Cопутствующий товар</strong></p>
+							<ol>
+								<li>Доска Евминова</li>
+								<li>Петля Глиссона</li>
+								<li>Резиновый жгут</li>
+								<li>Ручки для тяги</li>
+								<li>Деревянный ролик</li>
+							</ol>
 						</form>
 					</div>
+				</div><!-- END(page) -->
+				<div class="clearfix"></div>
+			</div><!-- item right -->
+			<!-- <div class="wrapper">
+				<div class="go left">
+					<div class="triangle l"></div>
 				</div>
+				<div class="slide"> -->
+				<!-- </div>
+				<div class="go right">
+					<div class="triangle r"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div> -->
+			<div class="popup" data-popup="bye">
+				<form class="bye-form" action="/" method="get"><!-- bye-form -->
+					<div class="column">
+						<label for="name">Имя</label><input id="name" type="text" required>
+						<label for="second-name">Фамилия</label><input id="second-name" type="text">
+						<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="+38(___) ___ __ __" required><!-- CM jQuery плагин-->
+					</div>
+					<div class="column">
+						<label for="email">e-mail</label><input id="email" type="email" placeholder="Email">
+						<label for="city">Город</label><input id="city" type="text"><!-- CM jQuery плагин-->
+						<label for="post">Нова Пошта</label><input id="post" type="text">
+					</div>
+					<div class="sub"><input type="submit" value="Заказать!"></div>
+					<div class="clearfix"></div>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
 
-				<div class="scroll-element" data-index="2"><!--CM-->
-					<div class="item left">
+		<div class="scroll-element" data-index="2"><!--CM-->
+			<div class="item left">
 <!-- 						<a class="fancybox" href="img/screenshot_5.jpg" rel="some-group">
-							<img src="img/screenshot_5.jpg" alt="ПравИло">
-						</a> -->
+					<img src="img/screenshot_5.jpg" alt="ПравИло">
+				</a> -->
+			</div>
+			<div class="item right">
+				<div class="bg"></div>
+				<!-- <div class="contentwrapper"> -->
+					<div class="uncolored">
+						<h3>Придумаю текст</h3>
+						<p>https://calendar.google.com/calendar/embed?src=creestalpravilo</p>
 					</div>
-					<div class="item right">
-						<div class="bg"></div>
-						<!-- <div class="contentwrapper"> -->
-							<div class="uncolored">
-								<h3>Придумаю текст</h3>
-								<p>https://calendar.google.com/calendar/embed?src=creestalpravilo</p>
-							</div>
-							<div class="colored">
-								<p><span>Абонементы</span></p>
-								<p> - базовый</p>
-								<p> - продвинутый</p>
-								<p> - VIP</p>
-								<a href="javascript:void(0);" class="training btn" data-modal="popup-show">Записаться сейчас!</a>
-								<div class="clearfix"></div>
-							</div>
-						<!-- </div>
-						<div class="clearfix"></div> -->
+					<div class="colored">
+						<p><span>Абонементы</span></p>
+						<p> - базовый</p>
+						<p> - продвинутый</p>
+						<p> - VIP</p>
+						<a href="javascript:void(0);" class="training btn" data-modal="popup-show">Записаться сейчас!</a>
+						<div class="clearfix"></div>
 					</div>
-					<div class="clearfix"></div>
-				</div>
+				<!-- </div>
+				<div class="clearfix"></div> -->
+			</div>
+			<div class="clearfix"></div>
+		</div>
 
-				<div class="scroll-element" data-index="3"><!--CM-->
-					<div class="gallery">
+		<div class="scroll-element" data-index="3"><!--CM-->
+			<div class="gallery">
 <!-- 						<div class="wrap"><a class="various iframe" href="https://www.youtube.com/embed/lFNwba44RUY">Задорнов о ПравИло</a>
-					</a></div> -->
-						<div class="column side">
-							<!-- <div class="wrap"> -->
-							<a class="various iframe" href="https://www.youtube.com/embed/lFNwba44RUY"><img src="img/refs/zadoronov.jpg" alt="Задорнов о ПравИло">Михаил Задорнов о&nbsp;ПравИло</a><!-- <a class="fancybox" href="img/refs/alena1.jpg" rel="some-group">
-							<img src="img/refs/alena1.jpg" alt="ПравИло">
-						</a> --><!-- </div> -->
-						<!-- <div class="wrap"> --><a class="fancybox" href="img/refs/girl_1.jpg" rel="some-group">
-							<img src="img/refs/Screenshot_4.jpg" alt="ПравИло">
-						</a><!-- </div> -->
-						</div>
-						<div class="column">
-							<a class="fancybox" href="img/refs/girl_2.jpg" rel="some-group">
-							<img src="img/refs/girl_2.jpg" alt="ПравИло">
-						</a>
-						</div>
-						<div class="column side">
-							<!-- <div class="wrap"> --><a class="fancybox" href="img/refs/jan-clode.jpg" rel="some-group">
-							<img src="img/refs/Screenshot_4.jpg" alt="ПравИло">
-						</a><!-- </div> -->
-							<!-- <div class="wrap"> --><a class="fancybox" href="img/refs/man_3.jpg" rel="some-group">
-							<img src="img/refs/Screenshot_4.jpg" alt="ПравИло">
-						</a><!-- </div> -->
-						</div>
-					</div>
+			</a></div> -->
+				<div class="column side">
+					<!-- <div class="wrap"> -->
+					<a class="various iframe" href="https://www.youtube.com/embed/lFNwba44RUY"><img src="img/refs/zadoronov.jpg" alt="Задорнов о ПравИло">Михаил Задорнов о&nbsp;ПравИло</a><!-- <a class="fancybox" href="img/refs/alena1.jpg" rel="some-group">
+					<img src="img/refs/alena1.jpg" alt="ПравИло">
+				</a> --><!-- </div> -->
+				<!-- <div class="wrap"> --><a class="fancybox" href="img/refs/girl_1.jpg" rel="some-group">
+					<img src="img/refs/Screenshot_4.jpg" alt="ПравИло">
+				</a><!-- </div> -->
+				</div>
+				<div class="column">
+					<a class="fancybox" href="img/refs/girl_2.jpg" rel="some-group">
+					<img src="img/refs/girl_2.jpg" alt="ПравИло">
+				</a>
+				</div>
+				<div class="column side">
+					<!-- <div class="wrap"> --><a class="fancybox" href="img/refs/jan-clode.jpg" rel="some-group">
+					<img src="img/refs/Screenshot_4.jpg" alt="ПравИло">
+				</a><!-- </div> -->
+					<!-- <div class="wrap"> --><a class="fancybox" href="img/refs/man_3.jpg" rel="some-group">
+					<img src="img/refs/Screenshot_4.jpg" alt="ПравИло">
+				</a><!-- </div> -->
+				</div>
+			</div>
 <!-- 					<div class="scroll-vertical">
-						it's own scroll-vertical
-					</div> -->
+				it's own scroll-vertical
+			</div> -->
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="scroll-element" data-index="4"><!--CM-->
+
+			<div class="item left colored strong-text">
+			<h2 class="strong-text">Наши контакты:</h2>
+				<p>Украина</p>
+				<p>г. Днепродзержинск</p>
+				<p>Аношкина 7А</p>
+				<div class="tel">
+					<a href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
+					<a href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
 					<div class="clearfix"></div>
 				</div>
+			</div>
+			<div class="item right fullwidth">
+				<div class="" id="map"></div>
+				<!-- <img src="img/screenshot_5.jpg" alt="ПравИло"> -->
+			</div>
+			<div class="clearfix"></div>
+		</div>
 
-				<div class="scroll-element" data-index="4"><!--CM-->
-
-					<div class="item left colored strong-text">
-					<h2 class="strong-text">Наши контакты:</h2>
-						<p>Украина</p>
-						<p>г. Днепродзержинск</p>
-						<p>Аношкина 7А</p>
-						<div class="tel">
-							<a href="tel: +380975998657">+38&nbsp;(093)&nbsp;410&nbsp;36&nbsp;79</a>
-							<a href="tel: +380939687412">+38&nbsp;(097)&nbsp;354&nbsp;82&nbsp;85</a>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-					<div class="item right fullwidth">
-						<div class="" id="map"></div>
-						<!-- <img src="img/screenshot_5.jpg" alt="ПравИло"> -->
-					</div>
-					<div class="clearfix"></div>
-				</div>
-
-			</div><!-- end: container -->
-		</main>
+	</div><!-- end: container -->
+</main>
 
 		<script async defer
 		      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz6eLo5feWbjAFpd6qV0c1tN5Cl2X0--4&callback=initMap">

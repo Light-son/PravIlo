@@ -23,11 +23,20 @@
 			}
 			else if ( me.is('.parent') || me.is('.parent *') ){
 				if ( !me.is('.parent') ) me = me.closest('.parent');
-
 				$('.scroll-element').removeClass('visible');
 				var index = me.attr('data-index');
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
-				console.log('INDEX :' + index);
+				// console.log('INDEX :' + index);
+			}
+			else if ( me.is('input[data-modal="callback"]') ) {
+				$('.input[data-modal="callback"]').removeClass('visible');
+				$('.callbackform').addClass('visible');
+				e.preventDefault();
+			}
+			else if ( me.is('.form-close') ) {
+				$('.input[data-modal="callback"]').addClass('visible');
+				$('.callbackform').removeClass('visible');
+				e.preventDefault();
 			}
 /*<input class="" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 <div class="popup" data-popup="callback">
