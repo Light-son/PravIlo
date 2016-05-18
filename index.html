@@ -11,6 +11,7 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script  src="bootstrap/bootstrap.min.js"></script>
 	<script src="js/fancybox.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -32,7 +33,7 @@
 				<input class="animation special-button visible" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 
 				<form class="callbackform" action="/form" method="get" data-popup="callback"> <!-- callbackform -->
-					<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="+38(___) ___ __ __" required><!-- CM jQuery плагин-->
+					<label for="phone">Телефон</label><input id="phone" type="tel" required>
 					<label for="name">Имя</label><input id="name" type="text" placeholder="Не обязательно">
 					<input class="animation special-button form-close" type="submit" value="Заказать звонок">
 					<div class="clearfix"></div>
@@ -104,10 +105,10 @@ bootstrap version!!!(cm 14min video)
 		</div>
 
 		<div class="scroll-element" data-index="1">
-			<div class="item left">
+			<div class="item left bordered">
 				<a class="fancybox" href="img/refs/grisha.jpg" rel="some-group">
 					<img src="img/refs/grisha_1.jpg" alt="ПравИло">
-					<a href="javascript:void(0);" class="buy btn" data-popup="bye">Заказать!</a>
+					<a href="javascript:void(0);" class="buy btn special-button animation" data-popup="call-order">Заказать!</a>
 				</a><!-- <div class="img-block visible"></div> -->
 			</div>
 			<div class="item right">
@@ -173,19 +174,19 @@ bootstrap version!!!(cm 14min video)
 				</div>
 				<div class="clearfix"></div>
 			</div> -->
-			<div class="popup" data-popup="call-order">
+			<div class="popup popup-close" data-popup="order">
 				<form class="bye-form" action="/" method="get"><!-- bye-form -->
 					<div class="column">
 						<label for="name">Имя</label><input id="name" type="text" required>
 						<label for="second-name">Фамилия</label><input id="second-name" type="text">
-						<label for="tel">Телефон</label><input id="tel" type="tel" placeholder="+38(___) ___ __ __" required><!-- CM jQuery плагин-->
+						<label for="phone">Телефон</label><input id="phone-bye" type="tel" required>
 					</div>
 					<div class="column">
 						<label for="email">e-mail</label><input id="email" type="email" placeholder="Email">
-						<label for="city">Город</label><input id="city" type="text"><!-- CM jQuery плагин-->
+						<label for="city">Город</label><input id="city" type="text"><!-- CM API-->
 						<label for="post">Нова Пошта</label><input id="post" type="text">
 					</div>
-					<div class="sub"><input type="submit" value="Заказать!"></div>
+					<div class="sub"><input class="animation special-button popup-close" type="submit" value="Заказать!"></div>
 					<div class="clearfix"></div>
 				</form>
 			</div>
@@ -193,7 +194,7 @@ bootstrap version!!!(cm 14min video)
 		</div>
 
 		<div class="scroll-element" data-index="2"><!--CM-->
-			<div class="item left">
+			<div class="item left bordered">
 <!-- 						<a class="fancybox" href="img/screenshot_5.jpg" rel="some-group">
 					<img src="img/screenshot_5.jpg" alt="ПравИло">
 				</a> -->
@@ -210,11 +211,38 @@ bootstrap version!!!(cm 14min video)
 						<p> - базовый</p>
 						<p> - продвинутый</p>
 						<p> - VIP</p>
-						<a href="javascript:void(0);" class="training btn" data-modal="popup-show">Записаться сейчас!</a>
+						<!-- training  -->
+						<a href="javascript:void(0);" class="animation special-button training btn" data-modal="popup-show">Записаться сейчас!</a>
 						<div class="clearfix"></div>
 					</div>
 				<!-- </div>
 				<div class="clearfix"></div> -->
+			</div>
+			<div class="popup popup-close" data-popup="training">
+				<form class="bye-form" action="/" method="get"><!-- bye-form -->
+					<div class="column">
+						<label for="phone">Телефон</label><input id="phone-training" type="tel" required>
+						<label for="email">e-mail</label><input id="email" type="email" placeholder="Email">
+						<label for="name">Имя</label><input id="name" type="text" required>
+						<label for="second-name">Фамилия</label><input id="second-name" type="text">
+					</div>
+					<div class="column">
+						<label for="city">Выбрать абонемент</label>
+						<input list="ticket"></p>
+						   <datalist id="ticket">
+						    <option>Аперитивы</option>
+						    <option>Горячие</option>
+						    <option>Десертные</option>
+						    <option>Диджестивы</option>
+						    <option>Молочные</option>
+						    <option>Слоистые</option>
+						   </datalist>
+
+						<label for="datetime">В какие дни и часы вам будет удобно заниматься?</label><textarea name="datetime" id="datetime" cols="30" rows="10"></textarea>
+					</div>
+					<div class="sub"><input class="animation special-button popup-close" type="submit" value="Заказать!"></div>
+					<div class="clearfix"></div>
+				</form>
 			</div>
 			<div class="clearfix"></div>
 		</div>

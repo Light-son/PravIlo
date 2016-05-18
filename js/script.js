@@ -3,9 +3,14 @@
 
 		$('.fancybox').fancybox();
 
-		$(document).on('click', function (e){
-			var me = $(e.target);//убирает наследование
 
+		// $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+		$("#phone").mask("+9 9 (999) 999-99-99", {placeholder:"."});
+		$("#phone-bye").mask("+9 9 (999) 999-99-99", {placeholder:"."});
+
+
+		$(document).on('click', function (e){
+			var me = $(e.target);
 
 			if ( me.is('.popup-close') ){
 				if ( !me.is('.popup') ) {
@@ -14,10 +19,7 @@
 				me.removeClass('visible');
 				e.preventDefault();
 			}
-			else if ( me.is('[data-popup]') ) {
-				// if (me.is('[data-popup]="bye"') ) {
-				// 	$('.img-block.visible').removeClass('visible');
-				// }
+			if ( me.is('[data-popup]') ) {
 				$('.popup[data-popup="'+ me.attr('data-popup') +'"]').addClass('visible');
 				e.preventDefault();
 			}
@@ -29,17 +31,16 @@
 				// console.log('INDEX :' + index);
 			}
 			if ( me.is('input[data-popup="callback"]') ) {
-				$('.input[data-popup="callback"]').removeClass('visible');
+				$('input[data-popup="callback"]').removeClass('visible');
 				$('.callbackform').addClass('visible');
 				e.preventDefault();
 			}
-			if ( me.is('.form-close') ) {
-				$('.input[data-popup="callback"]').addClass('visible');
+			if ( me.is('.form-close') ) {$("#leftFit").slideDown("slow")
+				$('input[data-popup="callback"]').addClass('visible');
 				$('.callbackform').removeClass('visible');
 				e.preventDefault();
 			}
 
 		});
-
 	});
 })(jQuery);

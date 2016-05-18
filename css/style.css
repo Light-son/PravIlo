@@ -19,6 +19,10 @@ body {
 	margin-right: 0px;
 }
 
+input:focus{
+	outline: none;
+}
+
 a, a:hover, a:active, a:focus, a:visited {
 	text-decoration: none;
 }
@@ -130,19 +134,17 @@ a, a:hover, a:active, a:focus, a:visited {
 	padding: 0;
 	width: 295px;
 	height: 46px;
-	border: 4px solid #8f0209;
 	border-radius: 25px;
-	font-family: Georgia;
-	font-size: 28px;
+	font-family: 'Roboto Slab';
+	font-size: 32px;
 	font-weight: bold;
 	background-color: #8f0209;
 	color: #f2d602;
 }
 .popup .bye-form input[type="submit"]:hover {
-	background-color: #f2d602;
-	color: #8f0209;
-	padding-top: -5px;
 	cursor: pointer;
+	background-color: #f2d602;
+	color: white;
 }
 
 #mapid {
@@ -196,7 +198,7 @@ header .top {
 	float: left;
 	width: 100%;    /* boots принимает? */
 	height: 180px;
-	/* margin: 0 auto; */
+	margin: 0 auto 10px;
 	padding: 0;
 }
 header .top .item {
@@ -241,7 +243,7 @@ header .top .contacts .tel {
 header .top .contacts .tel a {
 	display: block;
 	float: right;
-	/* width: 145px; */
+	width: 350px;
 	height: 45px;
 	margin: 0 0 0 0;
 	/* padding: 0 025px; */
@@ -319,7 +321,12 @@ header .callbackform {
 	background-color: #f2d602;
 	color: #8f0209;
 	font-family: 'Lora';
-
+	transform: rotateX(90deg);
+	transition-duration: 400ms;
+}
+header .callbackform.visible {
+	transform: rotateX(0deg);
+	height: 280px!important;
 }
 header .callbackform label {
 	width: 100%;
@@ -343,7 +350,7 @@ header .callbackform input {
 	color: #8f0209;
 }
 header .callbackform input[type="tel"] {
-	font-family: 'Times New Roman', sans-serif;
+	font-family: 'Lora', sans-serif;
 }
 header .callbackform input[type="text"] {
 	color: #8f0209!important;
@@ -382,14 +389,14 @@ header .callbackform > input[type="submit"]:hover {
 	background-color: #8f0209;
 } */
 #menu .container {
-    border-radius: 20px;
-    // background-color: #8f0209;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1171c+1,8e0502+16,8f0209+89,c1171c+100 */
-    background: #c1171c; /* Old browsers */
-    background: -moz-linear-gradient(top,  #c1171c 1%, #8e0502 16%, #8f0209 89%, #c1171c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #c1171c 1%,#8e0502 16%,#8f0209 89%,#c1171c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #c1171c 1%,#8e0502 16%,#8f0209 89%,#c1171c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1171c', endColorstr='#c1171c',GradientType=0 ); /* IE6-9 */
+		border-radius: 20px;
+		// background-color: #8f0209;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1171c+1,8e0502+16,8f0209+89,c1171c+100 */
+		background: #c1171c; /* Old browsers */
+		background: -moz-linear-gradient(top,  #c1171c 1%, #8e0502 16%, #8f0209 89%, #c1171c 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #c1171c 1%,#8e0502 16%,#8f0209 89%,#c1171c 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #c1171c 1%,#8e0502 16%,#8f0209 89%,#c1171c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1171c', endColorstr='#c1171c',GradientType=0 ); /* IE6-9 */
 
 }
 /* #menu nav {
@@ -531,7 +538,7 @@ main .page {
 	float: left;
 	width: 100%;
 	height: auto;
-	max-height: ;
+	font-weight: bold;
 }
 main .page p,
 main .page ul {
@@ -641,21 +648,21 @@ main .item.left .tel {
 	height: 500px;
 }
 main .item.left .tel a {
-    display: block;
-    /* float: right; */
-    /* width: 145px; */
-    height: 45px;
-    margin: 0 0 0 0;
-    /* padding: 0 025px; */
-    font-size: 30px;
-    font-family: 'Lora';
-    color: #8f0209;
+	display: block;
+	/* float: right; */
+	/* width: 145px; */
+	height: 45px;
+	margin: 0 0 0 0;
+	/* padding: 0 025px; */
+	font-size: 30px;
+	font-family: 'Lora';
+	color: #8f0209;
 }
 main .item.left img {
 	width: auto;
 	height: auto;
-	max-width: 500px;
-	max-height: 500px;
+	max-width: 490px;
+	max-height: 490px;
 	border-radius: 25px;
 }
 main .item.right {
@@ -665,16 +672,16 @@ main .item.right {
 	overflow-y: auto;
 	text-align: left;
 	border-radius: 25px;
-	font-size: 23px;
+	font-size: 21px;
 	/* outline: 1px solid red; */
 }
 main .item .bg {
 	width: 538px;
-	height: 470px;
+	height: 538px;
 	position: absolute;
 	background: transparent url('../img/svyatoch.png') 0 0 no-repeat;
 	background-size: contain;
-	background-position: 50px 0;
+	background-position: 15px 0;
 	opacity: 0.25;
 }
 /* main .item .contentwrapper {
@@ -686,15 +693,16 @@ main .item .bg {
 } */
 main .item.right h3 {
 	margin: 0;
-	padding: 0;
+	padding: 3px 0 6px 0px;
 	text-align: center;
 	margin-bottom: 20px;
+	font-weight: bold;
 }
 main .item.right p {
 	font-family: 'Lora';
 	text-indent: 40px;
 	text-align: justify;
-  font-size: 21px;
+	font-size: 21px;
 }
 main .item.right .uncolored {
 	height: 250px;
@@ -725,19 +733,24 @@ main .scroll-element .btn{
 }
 main .scroll-element .buy.btn {
 	display: block;
-	float: none;
-	width: 370px;
-	height: 75px;
-	margin: -95px 0 0 65px;
-	padding: 12px;
-	border: 4px solid #8f0209;
-	background-color: #f2d602;
-	color: #8f0209;
+	/*	float: none;*/
+	/* margin: 0 0 0 30px; */
+	margin: -75px 0 0 65px;
+	padding: 0;
+	width: 355px;
+	height: 48px;
+	border: none;
+	border-radius: 25px;
+	font-family: 'Roboto Slab';
+	font-size: 32px;
+	font-weight: bold;
+	background-color: #8f0209;
+	color: #f2d602;
 	z-index: 3;
 }
 main .scroll-element .btn:hover {
-	background-color: #8f0209;
-	color: #f2d602;
+		background-color: #8f0209;
+		color: white;
 }
 main .scroll-element .training.btn {
 	display: block;
@@ -748,18 +761,21 @@ main .scroll-element .training.btn {
 	height: 45px;
 	margin: 0 0 0 85px!important;
 	padding: 0;
+	font-family: Roboto Slab;
+	font-size: 28px;
+	font-weight: bold;
 	background-color: #8f0209;
 	color: rgba(242, 214, 2, 1);
 }
-/* main .scroll-element .training.btn:hover {
+main .scroll-element .training.btn:hover {
 	background-color: #f2d602;
-	color: #8f0209;
-} */
+	color: white;
+}
 .animation {
 		-webkit-transition: all 0.2s ease-out 0.05s;
-	     -moz-transition: all 0.2s ease-out 0.05s;
-	     -o-transition: all 0.2s ease-out 0.05s;
-	     transition: all 0.2s ease-out 0.05s;
+			 -moz-transition: all 0.2s ease-out 0.05s;
+			 -o-transition: all 0.2s ease-out 0.05s;
+			 transition: all 0.2s ease-out 0.05s;
 }
 
 #map {
