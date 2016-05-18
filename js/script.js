@@ -38,6 +38,9 @@
 				$('.callbackform').removeClass('visible');
 				e.preventDefault();
 			}
+
+			// $('.empty').addClass('showFromHidden');
+			// $('.empty').removeClass('empty');
 /*<input class="" type="button" data-popup="callback" value="Заказать звонок!"><!--shows callbackform -->
 <div class="popup" data-popup="callback">
 	<form class="callbackform" action="" method="get"><!-- callbackform -->
@@ -48,5 +51,24 @@
 		<input class="popup-close" type="submit"*/
 
 		});
+
+		// $(document).on('mouseover', function (e){
+		// 	var me = $(e.target);
+		// 	if ( me.is('.logo > img') ){
+		// 		$('.logo > img').fadeIn(200, function() {
+		// 			$('.logo > img').attr('src', 'img/logo-lada-light.png');
+		// 		});
+		// 	};
+		// });
+		// $(document).on('mouseout', function (e){
+		// 	var me = $(e.target);
+		// 	if ( me.is('.logo > img') ){
+		// 		$('.logo > img').fadeIn(200, function() {
+		// 			$('.logo > img').attr('src', 'img/logo-lada.png');
+		// 		});
+		// 	};
+		// });
+
+
 	});
 })(jQuery);
