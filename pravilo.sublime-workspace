@@ -5,7 +5,15 @@
 		[
 			[
 				"h",
-				"h-a	height: auto;"
+				"hover"
+			],
+			[
+				"la",
+				"last-child"
+			],
+			[
+				"ta",
+				"ta-j	text-align: justify;"
 			],
 			[
 				"d",
@@ -178,10 +186,6 @@
 			[
 				"padd",
 				"padding-left"
-			],
-			[
-				"ta",
-				"table-cell"
 			],
 			[
 				"cu",
@@ -510,10 +514,6 @@
 			[
 				"json",
 				"json_encode"
-			],
-			[
-				"fil",
-				"file_put_contents"
 			]
 		]
 	},
@@ -523,15 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 11437,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/script.js",
-			"settings":
-			{
-				"buffer_size": 1512,
+				"buffer_size": 11285,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +531,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 12181,
+				"buffer_size": 18784,
 				"line_ending": "Windows"
 			}
 		}
@@ -746,9 +738,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js/script.js",
 		"/C/Users/User/Desktop/Project/css/style.css",
 		"/C/Users/User/Desktop/Project/css/popup.css",
-		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js/script.js",
 		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/css/fancybox.css",
 		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js/fancybox.js",
 		"/C/Users/User/Desktop/Pravilo/ON GIT/PravIlo/js/test-script.js",
@@ -877,7 +869,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -925,6 +917,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data-modal",
+			"font-family",
+			"row",
+			".popup",
+			"input",
+			"<li>",
+			">",
 			"\n						<p><strong></strong></p>",
 			"\n.popup",
 			"refs/",
@@ -1045,14 +1044,7 @@
 			"\\t",
 			"\\n\\<",
 			"\\n<",
-			"  ",
-			"<\\?php echo (.*); \\?>",
-			"<?php",
-			"<\\?php echo (.*); \\?>",
-			"<?php",
-			"<\\?php echo (.*); \\?>",
-			"VK",
-			"URL"
+			"  "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1198,7 +1190,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1207,15 +1199,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11437,
+						"buffer_size": 11285,
 						"regions":
 						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										11031,
+										11034
+									]
+								],
+								"scope": "variable.parameter"
+							}
 						},
 						"selection":
 						[
 							[
-								5155,
-								5155
+								6831,
+								6831
 							]
 						],
 						"settings":
@@ -1232,62 +1237,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1243.0,
+						"translation.y": 3306.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1512,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								473,
-								366
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Twilight (SL).tmTheme",
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_thread_running": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12181,
+						"buffer_size": 18784,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2240,
+								2240
 							]
 						],
 						"settings":
@@ -1299,13 +1269,14 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/CSS3/CSS3.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7260.0,
+						"translation.y": 2124.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1313,7 +1284,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1366,7 +1337,7 @@
 	"project": "pravilo.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 50.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -1523,7 +1494,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
