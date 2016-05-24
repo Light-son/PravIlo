@@ -32,9 +32,13 @@
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
 				// console.log('INDEX :' + index);
 			}
+
+/* SHOW HIDE CALL FORM */
 			if ( me.is('#btnShow') ) {
 				me.removeClass('visible');
 				$('.callbackform').addClass('visible');
+				$('.callbackform').addClass('animated');
+				$('.callbackform').addClass('fadeIn');
 				// e.preventDefault();
 			}
 			else if(me.parents('#call-form').length == 0 
@@ -50,12 +54,13 @@
 				$('#call-form').removeClass('visible');
 				// e.preventDefault();
 			}
-			// Записаться сейчас ! Popup show
+
+/* Записаться сейчас ! Popup show */
 			if(me.is('.training'))
 			{  
 				$('#training-popup').addClass('visible');
 				$('#training-popup').addClass('animated');
-				$('#training-popup').addClass('fadeInDown');
+				$('#training-popup').addClass('fadeIn');
 			}
 			// Записаться сейчас ! Popup hide
 			else if(me.parents('.bye-form').length == 0 

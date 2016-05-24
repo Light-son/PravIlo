@@ -303,7 +303,7 @@ header .top .contacts a.animation.special-button:hover {
 	color: white;
 }
 header .callbackform {
-	// display: none;
+	display: none;
 	z-index: 3;
 	position: relative;
 	width: 355px;
@@ -315,7 +315,7 @@ header .callbackform {
 	border: 4px solid #8f0209;
 	background-color: #f2d602;
 	color: #8f0209;
-	opacity: 0;
+	// opacity: 0;
 	font-family: 'Lora';
 	
 	// transform: rotateX(90deg);
@@ -324,13 +324,7 @@ header .callbackform {
 	
 }
 header .callbackform.visible {
-	// transform: rotateX(0deg);
 	height: 280px!important;
-	opacity: 100;
-	-webkit-transition: all 0.2s ease-out 0.05s;
-	-moz-transition: all 0.2s ease-out 0.05s;
-	-o-transition: all 0.2s ease-out 0.05s;
-	transition: all 0.2s ease-out 0.05s;
 	
 }
 header .callbackform label {
@@ -853,19 +847,3 @@ h3, h2 {
 
 
 }
-
-#training-popup{
-  	-webkit-transition-duration: 0.1s;
- 	-moz-transition-duration: 0.1s;
-     -o-transition-duration: 0.1s;
-     transition-duration: 0.1s;
-  }
-
-  .scroll-element {
-  	 	-webkit-transition-duration: 0.1s;
-  		-moz-transition-duration: 0.1s;
-  	    -o-transition-duration: 0.1s;
-  	    transition-duration: 0.1s;
-  }
-
-

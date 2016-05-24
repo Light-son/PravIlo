@@ -41,12 +41,15 @@
 	}
 
 	if ($connection->query($query) === TRUE) {
-	    echo "New records created successfully";
+	    // echo "New records created successfully";
 	} else {
-	    echo "Error: " . $query . "<br>" . $connection->error;
+	    // echo "Error: " . $query . "<br>" . $connection->error;
 	}
 
 	$connection->close();
+
+	header("Location: http://".$_SERVER['HTTP_HOST']."index.html"); 
+	exit;
 
 	// fix functions
 	function mysql_entities_fix_string($connection, $string)
