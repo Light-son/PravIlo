@@ -5,8 +5,8 @@
 
 
 		// $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
-		$("#phone").mask("+3 8 (999) 999-99-99", {placeholder: "&#1645;"});
-		$("#phone-bye").mask("+3 8 (999) 999-99-99", {placeholder: "&#1645;"});
+		$("#phone").mask("+3 8 (999) 999-99-99", {placeholder: "*"});
+		$("#phone-bye").mask("+3 8 (999) 999-99-99", {placeholder: "*"});
 
 		$(document).on('click', function (e){
 			var me = $(e.target);
