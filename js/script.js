@@ -39,8 +39,8 @@
 				&& !me.is('#call-form') 
 				&& $('#call-form').hasClass('visible'))
 			{
+				$('.callbackform').removeClass('visible');
 				$('#btnShow').addClass('visible');
-				$('#call-form').removeClass('visible');
 			}
 			if ( me.is('.form-close')) {
 				// $("#leftFit").slideDown("slow")

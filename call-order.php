@@ -10,6 +10,12 @@
 		// echo '<h1>FAIL</h1>';
 		die($connection->connect_error);
 	}
+
+	header('Content-Type: text/html; charset=UTF-8');
+
+	$charSetQuery = "SET NAMES 'utf8' COLLATE utf8_general_ci";
+	$connection->query($charSetQuery);
+
 	// else
 	// {
 	// 	echo '<h1>SUBMIT</h1>';
