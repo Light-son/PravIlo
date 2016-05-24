@@ -261,7 +261,7 @@ header .top .contacts a.animation.special-button  {
 	display: none;
 	/* float: right; */
 	margin: 95px 0 0 30px;
-	padding: 0 0px;
+	padding: 0 40px;
 	width: 355px;
 	height: 48px;
 	border: none;
@@ -271,6 +271,7 @@ header .top .contacts a.animation.special-button  {
 	font-weight: bold;
 	background-color: #8f0209;
 	color: #f2d602;
+	cursor: pointer;
 }
 header .top .contacts a.animation.special-button .text {
 	display: block;
@@ -307,9 +308,9 @@ header .callbackform {
 	transition-duration: 400ms;
 	height: 0px;
 	-webkit-transition: all 0.2s ease-out 0.05s;
-				 -moz-transition: all 0.2s ease-out 0.05s;
-				 -o-transition: all 0.2s ease-out 0.05s;
-				 transition: all 0.2s ease-out 0.05s;
+	-moz-transition: all 0.2s ease-out 0.05s;
+	-o-transition: all 0.2s ease-out 0.05s;
+	transition: all 0.2s ease-out 0.05s;
 }
 header .callbackform.visible {
 	transform: rotateX(0deg);
