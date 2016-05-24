@@ -59,7 +59,7 @@ a, a:hover, a:active, a:focus, a:visited {
 	padding: 12px;
 } */
 
-.popup[data-popup="bye"]{
+.popup {
 	display: none;
 	width: 100vw;
 	height: 100vh;
@@ -96,11 +96,12 @@ a, a:hover, a:active, a:focus, a:visited {
 	text-align: center;
 }
 .popup .bye-form .sub {
-	display: block;
-	float: left;
-	width: 100%;
-	height: 60px;
-	margin: -0px 0 0 0;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin: -0px 0 0 0;
+    text-align: center;
 }
 .popup .bye-form label {
 	width: 100%;
@@ -130,16 +131,17 @@ a, a:hover, a:active, a:focus, a:visited {
 	color: #8f0209!important;
 }
 .popup .bye-form input[type="submit"] {
-	margin: 11px auto;
-	padding: 0;
-	width: 295px;
-	height: 46px;
-	border-radius: 25px;
-	font-family: 'Roboto Slab';
-	font-size: 32px;
-	font-weight: bold;
-	background-color: #8f0209;
-	color: #f2d602;
+    display: inline-block;
+    margin: 11px auto;
+    padding: 0;
+    width: 295px;
+    height: 51px;
+    border-radius: 25px;
+    font-family: 'Roboto Slab';
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #8f0209;
+    color: #f2d602;
 }
 .popup .bye-form input[type="submit"]:hover {
 	cursor: pointer;
