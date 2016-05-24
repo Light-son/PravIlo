@@ -73,7 +73,7 @@ a, a:hover, a:active, a:focus, a:visited {
 .popup .bye-form {
 	display: block;
 	width: 865px;
-	height: 460px!important;
+	height: auto;
 	border: 4px solid #8f0209;
 	background-color: #f2d602;
 	color: #8f0209;
@@ -90,7 +90,7 @@ a, a:hover, a:active, a:focus, a:visited {
 	display: block;
 	float: left;
 	width: 378px;
-	height: 300px;
+	height: 390px;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -102,6 +102,9 @@ a, a:hover, a:active, a:focus, a:visited {
     height: 60px;
     margin: -0px 0 0 0;
     text-align: center;
+}
+.popup .bye-form .additional {
+	display: none;
 }
 .popup .bye-form label {
 	width: 100%;
@@ -123,6 +126,13 @@ a, a:hover, a:active, a:focus, a:visited {
 	border: none;
 	border-radius: 25px;
 	color: #8f0209;
+}
+.popup .bye-form input[type="checkbox"] {
+	margin: 5px 0 0;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
 }
 .popup .bye-form input[type="tel"] {
 	font-family: 'Lora', sans-serif;
