@@ -3,7 +3,7 @@
 
 		$('.fancybox').fancybox();
 
-
+		// Phone mask
 		// $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
 		$("#phone").mask("+3 8 (999) 999-99-99", {placeholder: "*"});
 		$("#phone-bye").mask("+3 8 (999) 999-99-99", {placeholder: "*"});
@@ -25,6 +25,8 @@
 			}
 			if ( me.is('.parent') || me.is('.parent *') ){
 				if ( !me.is('.parent') ) me = me.closest('.parent');
+				$('.scroll-element').addClass('fadeIn');
+				$('.scroll-element').addClass('animated');
 				$('.scroll-element').removeClass('visible');
 				var index = me.attr('data-index');
 				$('.scroll-element[data-index="'+ index +'"]').addClass('visible');
@@ -50,8 +52,10 @@
 			}
 			// Записаться сейчас ! Popup show
 			if(me.is('.training'))
-			{
+			{  
 				$('#training-popup').addClass('visible');
+				$('#training-popup').addClass('animated');
+				$('#training-popup').addClass('fadeInDown');
 			}
 			// Записаться сейчас ! Popup hide
 			else if(me.parents('.bye-form').length == 0 

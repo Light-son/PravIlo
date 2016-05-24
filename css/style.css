@@ -73,15 +73,15 @@ a, a:hover, a:active, a:focus, a:visited {
 .popup .bye-form {
 	display: block;
 	width: 865px;
-	height: auto;
+	// height: auto;
 	border: 4px solid #8f0209;
 	background-color: #f2d602;
 	color: #8f0209;
 	position: absolute;
-	top: 0;
+	top: 20%;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	// bottom: 0;
 	margin: auto;
 	padding: 50px;
 	border-radius: 25px;
@@ -164,7 +164,7 @@ a, a:hover, a:active, a:focus, a:visited {
 }
 
 header, main, footer, section {
-	width: 100vw;
+	// width: 100vw;
 	height: auto;
 	margin: 0;
 	padding: 0;
@@ -322,16 +322,6 @@ header .callbackform {
 	// transition-duration: 400ms;
 	// height: 0px;
 	
-}
-.opacityShow {
-	
-}
-.opacityHide {
-	// opacity: 0;
-	// -webkit-transition: all 0.2s ease-out 0.05s;
-	// -moz-transition: all 0.2s ease-out 0.05s;
-	// -o-transition: all 0.2s ease-out 0.05s;
-	// transition: all 0.2s ease-out 0.05s;
 }
 header .callbackform.visible {
 	// transform: rotateX(0deg);
@@ -667,7 +657,7 @@ main .item.left .tel {
 	display: block;
 	float: left;
 	width: 100%;
-	height: 500px;
+	// height: 500px;
 }
 main .item.left .tel a {
 	display: block;
@@ -828,24 +818,6 @@ h3, h2 {
 	padding-bottom: 10px;
 	margin: 5px;
 }
-// .showFromHidden {
-// 	opacity: 1;
-// 		-webkit-transition: all 1s ease-out 1s;
-// 	     -moz-transition: all  1s ease-out 1s;
-// 	     -o-transition: all  1s ease-out 1s;
-// 	     transition: all  1s ease-out 1s;
-// }
-// .empty {
-// 	opacity: 0;
-// 	width: 0px;
-// }
-// .hiddenFromShow {
-// 	opacity: 1;
-// 		-webkit-transition: opacity 0.2s ease-out 0.05s;
-// 	     -moz-transition: opacity 0.2s ease-out 0.05s;
-// 	     -o-transition: opacity 0.2s ease-out 0.05s;
-// 	     transition: opacity 0.2s ease-out 0.05s;
-// }
 
 .bordered {
 	border: 5px solid white;
@@ -881,5 +853,19 @@ h3, h2 {
 
 
 }
+
+#training-popup{
+  	-webkit-transition-duration: 0.1s;
+ 	-moz-transition-duration: 0.1s;
+     -o-transition-duration: 0.1s;
+     transition-duration: 0.1s;
+  }
+
+  .scroll-element {
+  	 	-webkit-transition-duration: 0.1s;
+  		-moz-transition-duration: 0.1s;
+  	    -o-transition-duration: 0.1s;
+  	    transition-duration: 0.1s;
+  }
 
 
