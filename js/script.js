@@ -48,7 +48,18 @@
 				$('#call-form').removeClass('visible');
 				// e.preventDefault();
 			}
-			
+			// Записаться сейчас ! Popup show
+			if(me.is('.training'))
+			{
+				$('#training-popup').addClass('visible');
+			}
+			// Записаться сейчас ! Popup hide
+			else if(me.parents('.bye-form').length == 0 
+				&& !me.is('.bye-form') 
+				&& $('#training-popup').hasClass('visible'))
+			{
+				$('#training-popup').removeClass('visible');
+			}
 
 		});
 	});
