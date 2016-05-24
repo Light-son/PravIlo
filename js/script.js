@@ -10,6 +10,7 @@
 
 		$(document).on('click', function (e){
 			var me = $(e.target);
+			var cur = $(e.currentTarget);
 
 			if ( me.is('.popup-close') ){
 				if ( !me.is('.popup') ) {
@@ -34,12 +35,20 @@
 				$('.callbackform').addClass('visible');
 				// e.preventDefault();
 			}
-			if ( me.is('.form-close') ) {
+			else if(me.parents('#call-form').length == 0 
+				&& !me.is('#call-form') 
+				&& $('#call-form').hasClass('visible'))
+			{
+				$('#btnShow').addClass('visible');
+				$('#call-form').removeClass('visible');
+			}
+			if ( me.is('.form-close')) {
 				// $("#leftFit").slideDown("slow")
 				$('#btnShow').addClass('visible');
 				$('#call-form').removeClass('visible');
 				// e.preventDefault();
 			}
+			
 
 		});
 	});
