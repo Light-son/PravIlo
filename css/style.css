@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lora);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url('../css/fonts.css');
+
 *{
 	box-sizing: border-box;
 }
@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lora', serif;
+	font-family: 'lorabold';
 	background-image: url('../img/refs/sunflowers.jpg');/*main-bg_3.jpg*/
 	background-attachment: fixed;
 	background-size: cover;/*см!!!*/
@@ -138,7 +138,7 @@ a, a:hover, a:active, a:focus, a:visited {
 	font-size: 20px;
 }
 .popup .form input[type="tel"] {
-	font-family: 'Lora', sans-serif;
+	font-family: 'lorabold', sans-serif;
 }
 .popup .form input[type="text"] {
 	color: #8f0209!important;
@@ -150,7 +150,7 @@ a, a:hover, a:active, a:focus, a:visited {
     width: 295px;
     height: 51px;
     border-radius: 25px;
-    font-family: 'Roboto Slab';
+    font-family: 'roboto_slabbold';
     font-size: 32px;
     font-weight: bold;
     background-color: #8f0209;
@@ -263,7 +263,7 @@ header .top .contacts .tel {
 	padding: 0;
 	height: 105px;
 	color: #fff4cf;
-	font-family: 'Lora', sans-serif;
+	font-family: 'lorabold', sans-serif;
 }
 header .top .contacts .tel a {
 	display: block;
@@ -286,17 +286,19 @@ header .top .contacts a.animation.special-button  {
 	display: none;
 	/* float: right; */
 	margin: 95px 0 0 30px;
-	padding: 0 40px;
+	// padding: 0 40px;
 	width: 355px;
 	height: 48px;
 	border: none;
 	border-radius: 25px;
-	font-family: 'Roboto Slab';
+	font-family: 'roboto_slabbold';
 	font-size: 32px;
 	font-weight: bold;
 	background-color: #8f0209;
 	color: #f2d602;
 	cursor: pointer;
+	padding-top: 0;
+	text-align: center;
 }
 header .top .contacts a.animation.special-button .text {
 	display: block;
@@ -329,7 +331,7 @@ header .callbackform {
 	background-color: #f2d602;
 	color: #8f0209;
 	// opacity: 0;
-	font-family: 'Lora';
+	font-family: 'lorabold';
 
 	// transform: rotateX(90deg);
 	// transition-duration: 400ms;
@@ -362,10 +364,11 @@ header .callbackform input {
 	color: #8f0209;
 }
 header .callbackform input[type="tel"] {
-	font-family: 'Lora', sans-serif;
+	font-family: 'roboto_slabregular', sans-serif;
 }
 header .callbackform input[type="text"] {
 	color: #8f0209!important;
+	font-family: 'roboto_slabregular', sans-serif;
 }
 header .callbackform > input[type="submit"] {
 	display: inline-block;
@@ -374,7 +377,7 @@ header .callbackform > input[type="submit"] {
 	width: 295px;
 	height: 46px;
 	border-radius: 25px;
-	font-family: Roboto Slab;
+	font-family: 'roboto_slabbold';
 	font-size: 28px;
 	font-weight: bold;
 	background-color: #8f0209;
@@ -553,11 +556,12 @@ main .scroll-element[data-index='2'] .item.right img {
 	opacity: 0.2;
 }
 main .page {
+	// font-family: 'loraregular';
 	display: block;
 	float: left;
 	width: 100%;
 	height: auto;
-	font-weight: bold;
+	font-weight: normal;
 }
 main .page p,
 main .page ul {
@@ -611,9 +615,9 @@ main .gallery .column.side a.various.iframe {
 	height: 235px;
 }
 main .gallery .column.side a.various.iframe {
-	font-family: Georgia;
+	// font-family: Georgia;
 	font-size: 22px;
-	font-weight: bold;
+	font-weight: normal;
 	background-color: #f2d602;
 	color: #8f0209;
 	padding: 10px;/*15px*/
@@ -674,7 +678,7 @@ main .item.left .tel a {
 	margin: 0 0 0 0;
 	/* padding: 0 025px; */
 	font-size: 30px;
-	font-family: 'Lora';
+	// font-family: 'lorabold';
 	color: #8f0209;
 }
 main .item.left img {
@@ -718,7 +722,7 @@ main .item.right h3 {
 	font-weight: bold;
 }
 main .item.right p {
-	font-family: 'Lora';
+	// font-family: 'lorabold';
 	text-indent: 40px;
 	text-align: justify;
 	font-size: 21px;
@@ -760,7 +764,7 @@ main .scroll-element .buy.btn {
 	height: 48px;
 	border: none;
 	border-radius: 25px;
-	font-family: 'Roboto Slab';
+	font-family: 'roboto_slabbold';
 	font-size: 32px;
 	font-weight: bold;
 	background-color: #8f0209;
@@ -780,7 +784,7 @@ main .scroll-element .training.btn {
 	height: 45px;
 	margin: 0 0 0 85px!important;
 	padding: 0;
-	font-family: Roboto Slab;
+	font-family: 'roboto_slabbold';
 	font-size: 28px;
 	font-weight: bold;
 	background-color: #8f0209;
