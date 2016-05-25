@@ -531,7 +531,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14989,
+				"buffer_size": 14987,
 				"line_ending": "Windows"
 			}
 		},
@@ -924,6 +924,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#training-popup",
+			"visible",
+			"'#training-popup'",
+			"data-popup",
 			"form",
 			"item",
 			"element",
@@ -1047,11 +1051,7 @@
 			"var",
 			"$this->",
 			"var",
-			"$this->",
-			"var",
-			"$this->",
-			"$cn",
-			"$cf"
+			"$this->"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1213,8 +1213,8 @@
 						"selection":
 						[
 							[
-								1236,
-								1236
+								1281,
+								1290
 							]
 						],
 						"settings":
@@ -1229,10 +1229,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1213.0,
+						"translation.y": 1478.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1241,15 +1241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14989,
+						"buffer_size": 14987,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14415,
-								14415
+								13269,
+								13269
 							]
 						],
 						"settings":
@@ -1265,10 +1265,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6267.0,
+						"translation.y": 6057.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1284,8 +1284,8 @@
 						"selection":
 						[
 							[
-								1394,
-								1394
+								1044,
+								1044
 							]
 						],
 						"settings":
@@ -1300,7 +1300,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 513.0,
+						"translation.y": 452.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
