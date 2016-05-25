@@ -240,7 +240,6 @@
 		<div class="clearfix"></div>
 	</div>
 	<!-- После нажатия кнопки Заказать, экран сдвигается ниже где  будет предложен сопутствующий товар.
-
 А также нужно установить маленькое меню цветовой палитры для выбора цвета тренажера!
 <input type="color">
 
@@ -249,8 +248,6 @@
 
 1.*Телефон  2Емейл
 3.Имя      4.Фамилия
-Обязательным полем будет только номер телефона!
-Не нужно писать слова “Необязательно”, вместо этого слева от слова Телефон поставь красный знак *
 
 Доставка “менюшка выбора”
 Новая Почта или Самовывоз
@@ -301,20 +298,19 @@ Visa Есть всегда
 
 			<div class="sub"><input class="animation special-button popup-close" type="submit" value="Заказать!"></div>
 
-			<div class="additional visible">
-				<label for="color">Выберите цвет тренажера ПравИло</label>
-				<input type="color" name="color">
+			<div class="additional">
+				<p>Выберите цвет тренажера ПравИло</p>
 				<input id="black" type="radio" name="color" value="female">
 				<input id="red" type="radio" name="color" value="female">
 				<input id="white" type="radio" name="color" value="female">
 				<input id="orange" type="radio" name="color" value="female">
 
 				<p><b>Выберите Cопутствующий товар</b></p>
-				<label for="option1"></label><input type="checkbox" name="option1" value="a1">Доска Евминова<Br>
-				<label for="option2"></label><input type="checkbox" name="option2" value="a2">Петля Глиссона<Br>
-				<label for="option3"></label><input type="checkbox" name="option3" value="a3">Резиновый жгут<Br>
-				<label for="option4"></label><input type="checkbox" name="option4" value="a4">Ручки для тяги<Br>
-				<label for="option5"></label><input type="checkbox" name="option5" value="a5">Деревянный ролик
+				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Доска Евминова<input type="checkbox" name="option1" value="a1"></label>
+				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Петля Глиссона<input type="checkbox" name="option2" value="a2"></label>
+				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Резиновый жгут<input type="checkbox" name="option3" value="a3"></label>
+				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Ручки для тяги<input type="checkbox" name="option4" value="a4"></label>
+				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Деревянный ролик<input type="checkbox" name="option5" value="a5"></label>
 			</div>
 
 			<div class="clearfix"></div>
@@ -328,8 +324,8 @@ Visa Есть всегда
 					<label for="email">e-mail</label><input id="email" type="email" placeholder="Email">
 				</div>
 				<div class="column">
-					<label for="name">Имя</label><input id="name" type="text">
-					<label for="second-name">Фамилия</label><input id="second-name" type="text">
+					<label for="name">* Имя</label><input id="name" type="text" required>
+					<label for="second-name">* Фамилия</label><input id="second-name" type="text" required>
 					<!-- <input list="ticket">
 						<datalist id="ticket">
 							<option>Базовый</option>
@@ -337,11 +333,16 @@ Visa Есть всегда
 							<option>VIP</option>
 						</datalist> -->
 				</div>
-					<div class="sub"><label for="datetime">В какие дни и часы вам будет удобно заниматься?</label><textarea name="datetime" id="datetime" cols="55" rows="5"></textarea>
-					<div class="sub"><p><b>Выбрать абонемент</b></p>
-					<label for="ticket">Базовый</label><input type="checkbox" name="ticket1" value="a1">
-					<label for="ticket">Продвинутый</label><input type="checkbox" name="ticket2" value="a2">
-					<label for="ticket">VIP</label><input type="checkbox" name="ticket3" value="a3">
+				<div class="sub datetime">
+					<label for="datetime">В какие дни и часы вам будет удобно заниматься?</label>
+					<textarea name="datetime" id="datetime" cols="46" rows="2"></textarea>
+				</div>
+				<div class="sub ticket">Выбрать абонемент</div>
+
+				<div class="ticked-item"><label for="ticket">Базовый</label><input type="checkbox" name="ticket1" value="a1"></div>
+				<div class="ticked-item"><label for="ticket">Продвинутый</label><input type="checkbox" name="ticket2" value="a2"></div>
+				<div class="ticked-item"><label for="ticket">VIP</label><input type="checkbox" name="ticket3" value="a3"></div>
+
 				<div class="sub">
 					<input class="animation special-button popup-close" type="submit" value="Заказать!">
 				</div>

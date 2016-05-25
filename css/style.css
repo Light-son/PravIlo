@@ -71,46 +71,68 @@ a, a:hover, a:active, a:focus, a:visited {
 	z-index: 999;
 }
 .popup .form {
-    display: block;
-    width: 865px;
-    height: 550px;
-    border: 4px solid #8f0209;
-    background-color: #f2d602;
-    color: #8f0209;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    padding: 50px;
-    border-radius: 25px;
+	display: block;
+	width: 865px;
+	height: 550px;
+	border: 4px solid #8f0209;
+	background-color: #f2d602;
+	color: #8f0209;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 20px 50px 0;
+	border-radius: 25px;
+}
+.popup .form.bye-form {
+	padding: 50px 50px 0;
 }
 .popup .column {
 	display: block;
 	float: left;
-	width: 378px;
-	height: 195px!important;
-	margin: 0;
+	width: 355px;
+	height: 195px;
+	margin: 0 11px;
 	padding: 0;
 	text-align: center;
 }
-.popup .form .column {
-	height: 390px;
+.popup .bye-form .column {
+	height: 390px!important;
 }
 .popup .form .sub {
-    display: block;
-    float: left;
-    width: 100%;
-    height: 60px;
-    margin: -0px 0 0 0;
-    text-align: center;
+	display: block;
+	float: left;
+	width: 100%;
+	/* height: 60px; */
+	margin: -0px 0 0 0;
+	text-align: center;
+	font-size: 28px;
+}
+.popup .form .ticked-item {
+	display: block;
+	float: left;
+	width: 33%;
+	height: auto;
+	text-align: center;
+}
+.popup .form .ticked-item label {
+	padding: 10px;
 }
 .popup .form .additional {
 	display: none;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px 10px;
+	text-align: center;
+}
+.popup .form .additional p {
+	font-size: 28px;
 }
 .popup .form label {
-	width: 100%;
+	width: auto;
 	margin: 0px 0 -5px;
 	padding: 0;
 	font-size: 28px;
@@ -129,6 +151,13 @@ a, a:hover, a:active, a:focus, a:visited {
 	border: none;
 	border-radius: 25px;
 	color: #8f0209;
+	outline: none;
+}
+.popup .form input[type="radio"] {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
 }
 .popup .form input[type="checkbox"] {
 	margin: 5px 0 0;
@@ -144,17 +173,17 @@ a, a:hover, a:active, a:focus, a:visited {
 	color: #8f0209!important;
 }
 .popup .form input[type="submit"] {
-    display: inline-block;
-    margin: 11px auto;
-    padding: 0;
-    width: 295px;
-    height: 51px;
-    border-radius: 25px;
-    font-family: 'roboto_slabbold';
-    font-size: 32px;
-    font-weight: bold;
-    background-color: #8f0209;
-    color: #f2d602;
+	display: inline-block;
+	margin: 11px auto;
+	padding: 0;
+	width: 295px;
+	height: 51px;
+	border-radius: 25px;
+	font-family: 'roboto_slabbold';
+	font-size: 32px;
+	font-weight: bold;
+	background-color: #8f0209;
+	color: #f2d602;
 }
 .popup .form input[type="submit"]:hover {
 	cursor: pointer;
@@ -162,11 +191,12 @@ a, a:hover, a:active, a:focus, a:visited {
 	color: white;
 }
 .popup textarea {
-	margin-top: 15px;
+	margin: 15px auto 0;
 	padding: 5px;
 	font-size: 25px;
 	border: none;
-	border-radius: 25px;
+	outline: none;
+    border-radius: 10px;
 	color: #8f0209;
 }
 

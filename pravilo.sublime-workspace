@@ -523,7 +523,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 19089,
+				"buffer_size": 19604,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14925,
+				"buffer_size": 14989,
 				"line_ending": "Windows"
 			}
 		},
@@ -924,6 +924,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"form",
+			"item",
+			"element",
+			"<label>",
+			"</label>",
+			"<Br>",
 			"bye-",
 			"<l",
 			"label",
@@ -1045,13 +1051,7 @@
 			"var",
 			"$this->",
 			"$cn",
-			"$cf",
-			"class_name",
-			"class_file",
-			"$global",
-			"function ",
-			"html/tvoymaster/",
-			"http://"
+			"$cf"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1197,7 +1197,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1206,15 +1206,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19089,
+						"buffer_size": 19604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1485,
-								1485
+								1236,
+								1236
 							]
 						],
 						"settings":
@@ -1229,7 +1229,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1269.0,
+						"translation.y": 1213.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1241,28 +1241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14925,
+						"buffer_size": 14989,
 						"regions":
 						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										3579,
-										3582
-									]
-								],
-								"scope": "variable.parameter"
-							}
 						},
 						"selection":
 						[
 							[
-								12522,
-								12522
+								14415,
+								14415
 							]
 						],
 						"settings":
@@ -1278,10 +1265,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5754.0,
+						"translation.y": 6267.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1297,8 +1284,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1394,
+								1394
 							]
 						],
 						"settings":
@@ -1313,10 +1300,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 228.0,
+						"translation.y": 513.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
