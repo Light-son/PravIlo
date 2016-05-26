@@ -719,23 +719,17 @@ main .item.left img {
 	border-radius: 25px;
 }
 main .item.right {
-	width: 578px;
-	padding: 0 20px;
-	margin: 0 0 0 30px;
-	overflow-y: auto;
-	text-align: left;
-	border-radius: 25px;
-	font-size: 21px;
-	/* outline: 1px solid red; */
-}
-main .item .bg {
-	width: 538px;
-	height: 538px;
-	position: absolute;
-	background: transparent url('../img/svyatoch.png') 0 0 no-repeat;
-	background-size: contain;
-	background-position: 15px 0;
-	opacity: 0.25;
+    width: 578px;
+    padding: 0 20px;
+    margin: 0 0 0 30px;
+    overflow-y: auto;
+    text-align: left;
+    border-radius: 25px;
+    font-size: 21px;
+    outline: 1px solid red;
+    background: transparent url('../img/svyatoch-2.png') 0 0 no-repeat;
+    background-size: 100%;
+    background-position: 15px 0;
 }
 /* main .item .contentwrapper {
 	display: block;
