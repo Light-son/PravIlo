@@ -95,7 +95,7 @@
 							<li>Повышение уровня физической силы и энергетики.</li>
 						</ul>
 						<p>После тренировки каждый чувствует: легкость тела, бодрость, прилив жизненных сил и энергии.
-						 	Если регулярно подвергать тело растяжкам на «ПравИло» - легко повысить двигательный тонус, улучшить подвижность суставов, восстановить нормальную работу всего опорно-двигательного аппарата, особенно после травм, заболеваний, нервных напряжений и стрессов.
+							Если регулярно подвергать тело растяжкам на «ПравИло» - легко повысить двигательный тонус, улучшить подвижность суставов, восстановить нормальную работу всего опорно-двигательного аппарата, особенно после травм, заболеваний, нервных напряжений и стрессов.
 						</p>
 					</div>
 				</div> <!-- End(item right)-->
@@ -236,18 +236,10 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>
-	<!-- После нажатия кнопки Заказать, экран сдвигается ниже где  будет предложен сопутствующий товар.
-А также нужно установить маленькое меню цветовой палитры для выбора цвета тренажера!
-<input type="color">
-
+	<!--
 После нажатия кнопки Оформить заказ, этот плагин заказа становится “непоколебимым” (галочки и цвет нажать больше невозможно).
 Экран еще раз опускается ниже где появляется форма оформления заказа.
 
-1.*Телефон  2Емейл
-3.Имя      4.Фамилия
-
-Доставка “менюшка выбора”
-Новая Почта или Самовывоз
 
 Если Новая Почта то ниже вылазит еще меню
 Важно! При отправке по Новой Почте если пользователь не ввел Имя и Фамилию, то сайт заставляет его обязательно ввести эти поля
@@ -269,7 +261,7 @@ Visa Есть всегда
 		<form class="form bye-form" action="/" method="get"><!-- bye-form -->
 			<div class="column">
 				<label for="name">* Имя</label><input id="name" type="text" required>
-				<label for="second-name">Фамилия</label><input id="second-name" type="text">
+				<label for="second-name">* Фамилия</label><input id="second-name" type="text" required>
 				<label for="phone">* Телефон</label><input id="phone-bye" type="tel" required>
 				<label for="delivery">Доставка</label>
 				<input list="delivery">
@@ -295,19 +287,64 @@ Visa Есть всегда
 
 			<div class="sub"><input class="animation special-button popup-close" type="submit" value="Заказать!"></div>
 
-			<div class="additional">
+			<div class="additional visible">
 				<p>Выберите цвет тренажера ПравИло</p>
-				<input id="black" type="radio" name="color" value="female">
-				<input id="red" type="radio" name="color" value="female">
-				<input id="white" type="radio" name="color" value="female">
-				<input id="orange" type="radio" name="color" value="female">
+
+				<input id="black" type="radio" name="colorscheme" class="color">
+				<input id="red" type="radio" name="colorscheme" class="color">
+				<input id="white" type="radio" name="colorscheme" class="color">
+				<input id="orange" type="radio" name="colorscheme" class="color">
 
 				<p><b>Выберите Cопутствующий товар</b></p>
-				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Доска Евминова<input type="checkbox" name="option1" value="a1"></label>
-				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Петля Глиссона<input type="checkbox" name="option2" value="a2"></label>
-				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Резиновый жгут<input type="checkbox" name="option3" value="a3"></label>
-				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Ручки для тяги<input type="checkbox" name="option4" value="a4"></label>
-				<label><img src="img/refs/man_2.jpg" alt="ПравИло">Деревянный ролик<input type="checkbox" name="option5" value="a5"></label>
+
+
+				<div class="product">
+					<a class="img" href="javascript:void(0);">
+						<img src="img/svyatoch-2.png" alt="ПравИло: Доска Евминова">
+					</a>
+					<a class="name" href="javascript:void(0);" title="Доска Евминова">Доска Евминова</a>
+					<div class="button anim">
+						<div class="price">
+							<strong>999 999 999 грн</strong>
+						</div>
+						<a class="order" href="javascript:void(0);">
+							<img src="img/svyatoch-2.png" height="35" width="35" alt="ПравИло: Доска Евминова">
+						</a>
+					</div>
+
+					<!-- <label for="option1"><img src="img/refs/man_2.jpg" alt="ПравИло">Доска Евминова</label>
+					<input type="checkbox" name="option1" value="a1"> -->
+				</div>
+
+				<div class="product">
+
+
+					<!-- <label for="option2"><img src="img/refs/man_2.jpg" alt="ПравИло">Петля Глиссона</label>
+					<input type="checkbox" name="option2" value="a2"> -->
+				</div>
+
+				<div class="product">
+
+
+					<!-- <label for="option3"><img src="img/refs/man_2.jpg" alt="ПравИло">Резиновый жгут</label>
+					<input type="checkbox" name="option3" value="a3"> -->
+				</div>
+
+				<div class="product">
+
+
+					<!-- <label for="option4"><img src="img/refs/man_2.jpg" alt="ПравИло">Ручки для тяги</label>
+					<input type="checkbox" name="option4" value="a4"> -->
+				</div>
+
+				<div class="product">
+
+
+					<!-- <label for="option5"><img src="img/refs/man_2.jpg" alt="ПравИло">Деревянный ролик</label>
+					<input type="checkbox" name="option5" value="a5"> -->
+				</div>
+
+				<div class="sub"><input class="animation special-button popup-close" type="submit" value="Завершить!"></div>
 			</div>
 
 			<div class="clearfix"></div>
@@ -352,7 +389,7 @@ Visa Есть всегда
 </main>
 		<script src="js/google-map.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAz6eLo5feWbjAFpd6qV0c1tN5Cl2X0--4&callback=initMap">
-		    </script>
+			</script>
 
 </body>
 </html>

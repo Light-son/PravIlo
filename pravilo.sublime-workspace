@@ -523,7 +523,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 19543,
+				"buffer_size": 21109,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14907,
+				"buffer_size": 15602,
 				"line_ending": "Windows"
 			}
 		},
@@ -924,6 +924,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".form",
+			".popup .form {\n	/*  */\n}\n",
+			"product",
+			"<label",
+			"o\"",
+			"</label>",
+			"option",
+			"radio",
+			"<label>",
+			"name",
 			"bg",
 			"#training-popup",
 			"visible",
@@ -1041,17 +1051,7 @@
 			"./",
 			"./manage/class/",
 			"$db",
-			"self::\\$(\\w*)\\(",
-			"self::\\$(.*)\\(",
-			"self::(.*)\\(",
-			"self::$(.*)\\(",
-			"self::$file",
-			"$this->",
-			"var",
-			"$this->",
-			"var",
-			"$this->",
-			"var"
+			"self::\\$(\\w*)\\("
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1206,15 +1206,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19543,
+						"buffer_size": 21109,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15520,
-								15520
+								4417,
+								4417
 							]
 						],
 						"settings":
@@ -1229,7 +1229,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13848.0,
+						"translation.y": 4443.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1241,15 +1241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14907,
+						"buffer_size": 15602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7025,
-								7025
+								12844,
+								12164
 							]
 						],
 						"settings":
@@ -1265,7 +1265,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3055.0,
+						"translation.y": 5771.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
