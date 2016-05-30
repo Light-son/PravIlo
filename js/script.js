@@ -41,8 +41,8 @@
 				$('.callbackform').addClass('fadeIn');
 				// e.preventDefault();
 			}
-			else if(me.parents('#call-form').length == 0
-				&& !me.is('#call-form')
+			else if(me.parents('#call-form').length == 0 
+				&& !me.is('#call-form') 
 				&& $('#call-form').hasClass('visible'))
 			{
 				$('.callbackform').removeClass('visible');
@@ -56,25 +56,29 @@
 			}
 
 /* Записаться сейчас ! Popup show */
-			if(me.is('.training'))
-			{
+			if(me.is('#get-up-trainings'))
+			{  
 				$('#training-popup').addClass('visible');
 				$('#training-popup').addClass('animated');
 				$('#training-popup').addClass('fadeIn');
 			}
 			// Записаться сейчас ! Popup hide
-			else if(me.parents('.bye-form').length == 0
-				&& !me.is('.bye-form')
+			else if(me.parents('.bye-form').length == 0 
+				&& !me.is('.bye-form') 
 				&& $('#training-popup').hasClass('visible'))
 			{
 				$('#training-popup').removeClass('visible');
 			}
-
-			// if(me.is('.form.bye-form .sub .animation.special-button.popup-close'))
+		/**/
+/* НОВА ПОШТА */
+			// if(me.is('#get-up-trainings'))
 			// {
-			// 	//
+			// 	var fnumb = 100;
+			// 	var snumb = 200;
+			// 	$.get('server.php', {a:fnumb,b:snumb}, function(data){
+			// 	   $("#training-popup").html(data);
+			// 	});
 			// }
-
 
 		});
 	});
