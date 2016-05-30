@@ -12,9 +12,11 @@
 			var me = $(e.target);
 			var cur = $(e.currentTarget);
 
-			if ( me.is('.popup-close') ){
-				if ( !me.is('.popup') ) {
-					me = me.closest('.popup');
+			// Popup show
+
+			if ( me.is('* .popup-close') ){
+				if ( !me.is('* .popup') ) {
+					me = me.closest('* .popup');
 				}
 				me.removeClass('visible');
 				e.preventDefault();
