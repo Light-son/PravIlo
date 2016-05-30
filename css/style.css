@@ -118,7 +118,7 @@ a, a:hover, a:active, a:focus, a:visited {
 	text-align: center;
 }
 .popup .form .ticked-item label {
-	padding: 10px;
+	padding: 4px;
 }
 
 .popup .form label {
@@ -192,6 +192,9 @@ a, a:hover, a:active, a:focus, a:visited {
 	outline: none;
 	border-radius: 10px;
 	color: #8f0209;
+	max-width: 90%; /* Ширина поля в процентах */
+	max-height: 100px; /* Высота поля в пикселах */
+	resize: vertical;
 }
 .popup .form .additional {
 	display: none;
@@ -204,19 +207,23 @@ a, a:hover, a:active, a:focus, a:visited {
 .popup .form .additional p {
 	font-size: 28px;
 }
-.popup .form .additional label {
+.popup .form .additional label/* ,
+.popup .form .ticked-item label */ {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
 	padding-left: 25px;
 	margin-right: 15px;
-	font-size: 13px;
+	font-size: 23px;
 }
 .popup .form .additional input[type=radio],
-.popup .form .additional input[type=checkbox] {
+.popup .form .additional input[type=checkbox]/* ,
+.popup .form .ticked-item input[type=radio],
+.popup .form .ticked-item input[type=checkbox] */ {
 	display: none;
 }
-.popup .form .additional label:before {
+.popup .form .additional label:before/* ,
+.popup .form .ticked-item label:before */ {
 	content: "";
 	display: inline-block;
 	width: 16px;
@@ -228,20 +235,24 @@ a, a:hover, a:active, a:focus, a:visited {
 	background-color: #aaa;
 	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
 }
-.popup .form .additional .radio label:before {
+.popup .form .additional .radio label:before/* ,
+.popup .form .ticked-item .radio label:before */ {
 	border-radius: 8px;
 }
-.popup .form .additional input[type=radio]:checked + label:before {
+.popup .form .additional input[type=radio]:checked + label:before/* ,
+.popup .form .ticked-item input[type=radio]:checked + label:before */ {
 	content: "\2022";
 	color: #f3f3f3;
 	font-size: 30px;
 	text-align: center;
 	line-height: 18px;
 }
-.popup .form .additional .checkbox label:before {
+.popup .form .additional .checkbox label:before/* ,
+.popup .form .ticked-item .checkbox label:before  */{
 	border-radius: 3px;
 }
-.popup .form .additional input[type=checkbox]:checked + label:before {
+.popup .form .additional input[type=checkbox]:checked + label:before/* ,
+.popup .form .ticked-item input[type=checkbox]:checked + label:before  */{
 	content: "\2713";
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 	font-size: 15px;
