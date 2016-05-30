@@ -63,8 +63,8 @@
 				$('#training-popup').addClass('fadeIn');
 			}
 			// Записаться сейчас ! Popup hide
-			else if(me.parents('.bye-form').length == 0 
-				&& !me.is('.bye-form') 
+			else if(me.parents('#training-popup').length == 0 
+				&& !me.is('#training-form') 
 				&& $('#training-popup').hasClass('visible'))
 			{
 				$('#training-popup').removeClass('visible');
