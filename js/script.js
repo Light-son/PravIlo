@@ -56,7 +56,7 @@
 			}
 
 /* Записаться сейчас ! Popup show */
-			if(me.is('.training'))
+			if(me.is('#get-up-trainings'))
 			{  
 				$('#training-popup').addClass('visible');
 				$('#training-popup').addClass('animated');
@@ -69,6 +69,16 @@
 			{
 				$('#training-popup').removeClass('visible');
 			}
+		/**/
+/* НОВА ПОШТА */
+			// if(me.is('#get-up-trainings'))
+			// {
+			// 	var fnumb = 100;
+			// 	var snumb = 200;
+			// 	$.get('server.php', {a:fnumb,b:snumb}, function(data){
+			// 	   $("#training-popup").html(data);
+			// 	});
+			// }
 
 		});
 	});
