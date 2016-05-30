@@ -523,7 +523,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 21109,
+				"buffer_size": 22193,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 15602,
+				"buffer_size": 16541,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "js/script.js",
 			"settings":
 			{
-				"buffer_size": 2208,
+				"buffer_size": 2307,
 				"line_ending": "Windows"
 			}
 		}
@@ -924,6 +924,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}",
+			"\n1",
+			"\n0",
+			">",
 			".form",
 			".popup .form {\n	/*  */\n}\n",
 			"product",
@@ -1047,11 +1051,7 @@
 			"../font/",
 			"../img/",
 			"../",
-			"../images/",
-			"./",
-			"./manage/class/",
-			"$db",
-			"self::\\$(\\w*)\\("
+			"../images/"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1197,7 +1197,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1206,15 +1206,31 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21109,
+						"buffer_size": 22193,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4417,
-								4417
+								3557,
+								3557
+							],
+							[
+								3852,
+								3852
+							],
+							[
+								3922,
+								3922
+							],
+							[
+								4087,
+								4087
+							],
+							[
+								4160,
+								4160
 							]
 						],
 						"settings":
@@ -1229,10 +1245,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4443.0,
+						"translation.y": 4272.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1241,15 +1257,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15602,
+						"buffer_size": 16541,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12844,
-								12164
+								12856,
+								12856
 							]
 						],
 						"settings":
@@ -1265,10 +1281,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5771.0,
+						"translation.y": 5508.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1277,15 +1293,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2208,
+						"buffer_size": 2307,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1044,
-								1044
+								2186,
+								2282
 							]
 						],
 						"settings":
@@ -1300,7 +1316,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 452.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,

@@ -289,11 +289,24 @@ Visa Есть всегда
 
 			<div class="additional visible">
 				<p>Выберите цвет тренажера ПравИло</p>
-
-				<input id="black" type="radio" name="colorscheme" class="color">
-				<input id="red" type="radio" name="colorscheme" class="color">
-				<input id="white" type="radio" name="colorscheme" class="color">
-				<input id="orange" type="radio" name="colorscheme" class="color">
+				<div class="radio">
+					<input id="black" type="radio" name="colorscheme" class="color">
+					<label for="black">Черный</label>
+					<input id="red" type="radio" name="colorscheme" class="color">
+					<label for="red">Красный</label>
+					<input id="white" type="radio" name="colorscheme" class="color">
+					<label for="white">Белый</label>
+					<input id="orange" type="radio" name="colorscheme" class="color">
+					<label for="orange">Рыжий</label>
+				</div>
+<!--  при нажатии на чекбокс можно отловить событие onchange, и вообще он будет работать как надо.
+"У меня почему-то не появляется атрибут checked у выбранного чекбокса, если кликать на span (хотя галочка у span появляется).
+После того, как выставился checked, можно например вызвать какое-то событие, которое вызовет ajax-запрос."
+" - Рискну предположить, что событие AJAX у вас привязано к Click input а не к span."  -->
+<!-- Есть удобный и легкий плагин для стилизации checkbox. Сам использую в каждом проекте, может кому пригодится: jQuery checkbox.  -->
+<!-- Попробуйте стилизовать чекбоксы через сторонний плагин. например через этот https://github.com/Dimox/jQueryFormStyler
+Сам им пользуюсь, с аяксом работает нормально  -->
+<!-- 				 -->
 
 				<p><b>Выберите Cопутствующий товар</b></p>
 
