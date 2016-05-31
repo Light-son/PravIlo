@@ -106,7 +106,7 @@
 		<div class="item left bordered">
 			<a class="fancybox" href="img/refs/grisha.jpg" rel="some-group">
 				<img src="img/refs/grisha_1.jpg" alt="ПравИло">
-				<a href="javascript:void(0);" class="buy btn special-button animation" data-popup="order">Заказать!</a>
+				<a id="bye-button" href="javascript:void(0);" class="buy btn special-button animation" data-popup="order">Заказать!</a>
 			</a><!-- <div class="img-block visible"></div> -->
 		</div>
 		<div class="item right">
@@ -257,8 +257,7 @@ Visa Есть всегда
 
 Завершить!-->
 
-
-	<div class="popup popup-close" data-popup="order">
+	<div id="bye-popup" class="popup popup-close" data-popup="order">
 		<form class="form bye-form one" action="/" method="get">
 			<div class="additional visible">
 				<div class="radios">
@@ -396,7 +395,7 @@ Visa Есть всегда
 		</div>
 
 		<div id="training-popup" class="popup popup-close" data-popup="training">
-			<form class="form" action="/" method="get">
+			<form id="training-form" class="form" action="/" method="get">
 				<div class="column">
 					<label for="phone">* Телефон</label><input id="phone-training" type="tel" required>
 					<label for="email">e-mail</label><input id="email" type="email" placeholder="Email">
