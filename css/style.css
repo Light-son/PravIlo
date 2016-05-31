@@ -73,7 +73,7 @@ a, a:hover, a:active, a:focus, a:visited {
 .popup .form {
 	display: block;
 	width: 865px;
-	height: 550px;
+	height: 550px;/*auto  */
 	border: 4px solid #8f0209;
 	background-color: #f2d602;
 	color: #8f0209;
@@ -87,7 +87,11 @@ a, a:hover, a:active, a:focus, a:visited {
 	border-radius: 25px;
 }
 .popup .form.bye-form {
-	padding: 50px 50px 0;
+	padding: 30px;
+}
+.popup .form.bye-form.one {
+	height: auto;
+	padding: 10px;
 }
 .popup .column {
 	display: block;
@@ -99,7 +103,11 @@ a, a:hover, a:active, a:focus, a:visited {
 	text-align: center;
 }
 .popup .bye-form .column {
+	display: inline-block;
 	height: 390px!important;
+	margin: 0 auto!important;
+	width: 50%;
+	padding: 0 20px;
 }
 .popup .form .sub {
 	display: block;
@@ -204,8 +212,23 @@ a, a:hover, a:active, a:focus, a:visited {
 	padding: 5px 10px;
 	text-align: center;
 }
+.popup .form .additional .radios {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.popup .form .additional h4 {
+	margin-bottom: 20px;
+	font-size: 25px;
+}
 .popup .form .additional p {
 	font-size: 28px;
+}
+.popup .form .additional input[type=radio],
+.popup .form .additional input[type=checkbox]/* ,
+.popup .form .ticked-item input[type=radio],
+.popup .form .ticked-item input[type=checkbox] */ {
+	display: none;
 }
 .popup .form .additional label/* ,
 .popup .form .ticked-item label */ {
@@ -216,36 +239,30 @@ a, a:hover, a:active, a:focus, a:visited {
 	margin-right: 15px;
 	font-size: 23px;
 }
-.popup .form .additional input[type=radio],
-.popup .form .additional input[type=checkbox]/* ,
-.popup .form .ticked-item input[type=radio],
-.popup .form .ticked-item input[type=checkbox] */ {
-	display: none;
-}
 .popup .form .additional label:before/* ,
 .popup .form .ticked-item label:before */ {
 	content: "";
 	display: inline-block;
-	width: 16px;
-	height: 16px;
-	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	margin-right: 30px;
 	position: absolute;
 	left: 0;
-	bottom: 1px;
-	background-color: #aaa;
-	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+	bottom: 7px;
+	background-color: #fff;
+	/* box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); */
 }
-.popup .form .additional .radio label:before/* ,
+.popup .form .additional .radios label:before/* ,
 .popup .form .ticked-item .radio label:before */ {
-	border-radius: 8px;
+	border-radius: 12px!important;
 }
 .popup .form .additional input[type=radio]:checked + label:before/* ,
 .popup .form .ticked-item input[type=radio]:checked + label:before */ {
 	content: "\2022";
-	color: #f3f3f3;
+	color: #8f0209;
 	font-size: 30px;
 	text-align: center;
-	line-height: 18px;
+	line-height: 20px;
 }
 .popup .form .additional .checkbox label:before/* ,
 .popup .form .ticked-item .checkbox label:before  */{
@@ -277,15 +294,28 @@ a, a:hover, a:active, a:focus, a:visited {
 	<!-- <label for="option1"><img src="img/refs/man_2.jpg" alt="ПравИло">Доска Евминова</label>
 	<input type="checkbox" name="option1" value="a1"> -->
 </div> */
+.popup .form .additional .product-wrapper {
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 10px 0 0;
+	text-align: center;
+}
 .popup .form .additional .product {
 	width: 205px;
 	height: 250px;
 	padding: 0;
-	display: block;
-	float: left;
+	display: inline-block;
 	border: 1px solid rgba(91,86,82,.2);
+	border-radius: 10px;
 	text-align: center;
-	margin: 5px 8px 0 0;
+	margin: 5px 8px 10px 0;
+}
+.popup .form .additional .product:hover,
+.popup .form .additional .product:focus {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .popup .form .additional .product .img {
 	display: block;
@@ -300,29 +330,35 @@ a, a:hover, a:active, a:focus, a:visited {
 	max-height: 114px;
 }
 .popup .form .additional .name {
-	display: block;
-	width: 205px;
-	height: 68px;
-	margin: 0;
-	padding: 10px 5px;
-	text-decoration: none;
-	color: #506273;
-	font-size: 14px;
-	vertical-align: middle;
-	overflow: hidden;
+    display: block;
+    width: 205px;
+    height: 68px;
+    margin: 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #8f0209;
+    font-size: 23px;
+    vertical-align: middle;
+    overflow: hidden;
 }
 .popup .form .additional .button {
 	display: block;
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	padding: 10px 0;
-	color: #000;
-	background-color: #777;
 	text-align: center;
 	position: relative;
+	margin: 11px auto;
+	border-radius: 0 0 10px 10px;
+	font-family: 'roboto_slabbold';
+	font-size: 22px;
+	font-weight: bold;
+	background-color: #8f0209;
+	color: #f2d602;
 }
 .popup .form .additional .button .price{
-	/*  */
+	background-color: #8f0209;
+	color: #F2D602;
 }
 .popup .form .additional .order {
 	/*  */
